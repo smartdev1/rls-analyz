@@ -1,0 +1,393 @@
+{
+    "nav": {
+        "home": "Home",
+        "properties": "Properties",
+        "services": "Services",
+        "blog": "Blog",
+        "contact": "Contact",
+        "language": "Language"
+    },
+    "hero": {
+        "title": "Your Partner in Commercial Real Estate",
+        "subtitle": "Discover premium properties and expert advisory services designed to elevate your business to new heights.",
+        "cta": "Discover Our Properties"
+    },
+    "home": {
+        "meta": {
+            "title": "MODELI - Commercial Real Estate | Premium Properties & Advisory",
+            "description": "Discover our selection of premium commercial real estate properties. Expertise, personalized advice and support for your projects."
+        },
+        "properties": {
+            "title": "Our Exceptional Properties",
+            "subtitle": "Discover our selection of commercial real estate in the best locations.",
+            "noLocation": "Location not specified",
+            "priceOnRequest": "Price on request",
+            "empty": "No properties available at the moment",
+            "viewAll": "View all properties"
+        },
+        "services": {
+            "title": "Our Services",
+            "subtitle": "Complete support for all your commercial real estate projects.",
+            "cta": "Discover our services",
+            "market": {
+                "title": "Market Research",
+                "description": "In-depth analysis of the real estate market to optimize your investments."
+            },
+            "analysis": {
+                "title": "Sector Analysis",
+                "description": "Detailed evaluation of business sectors to target the best opportunities."
+            },
+            "investment": {
+                "title": "Investment Advisory",
+                "description": "Personalized support to secure and maximize returns on your real estate projects."
+            }
+        },
+        "why": {
+            "title": "Why Choose MODELI?",
+            "subtitle": "Our expertise and commitment make the difference in each of your projects.",
+            "expertise": {
+                "title": "Expertise",
+                "description": "Over 15 years of experience in commercial real estate."
+            },
+            "trust": {
+                "title": "Trust",
+                "description": "Over 500 satisfied clients trust us."
+            },
+            "results": {
+                "title": "Results",
+                "description": "95% satisfaction rate across 10+ projects."
+            }
+        },
+        "blog": {
+            "title": "News & Insights",
+            "subtitle": "Stay informed about the latest trends in commercial real estate.",
+            "viewAll": "View all articles"
+        },
+        "cta": {
+            "title": "Ready to Invest in Your Future?",
+            "subtitle": "Contact our experts now for a personalized consultation and discover how we can support you.",
+            "button": "Contact Us"
+        }
+    },
+    "properties": {
+        "title": "Our Properties",
+        "subtitle": "Discover our selection of exceptional properties tailored to your needs",
+        "loading": "Loading properties...",
+        "back": "Back to list",
+        "priceOnRequest": "Price on request",
+        "noResults": "No properties match your search criteria",
+        "retry": "Try again",
+        "noLocation": "Location not specified",
+        "filters": {
+            "title": "Filters",
+            "reset": "Reset",
+            "search": "Search",
+            "searchPlaceholder": "Search for a property...",
+            "type": "Property type",
+            "allTypes": "All types",
+            "price": "Price",
+            "minPrice": "Min price",
+            "maxPrice": "Max price",
+            "surface": "Surface area",
+            "minSurface": "Min surface",
+            "maxSurface": "Max surface",
+            "location": "Location",
+            "allLocations": "All locations",
+            "results": "{count} property(ies) found"
+        },
+        "sort": {
+            "label": "Sort by",
+            "recent": "Most recent",
+            "priceAsc": "Price: low to high",
+            "priceDesc": "Price: high to low",
+            "surfaceAsc": "Surface: low to high",
+            "surfaceDesc": "Surface: high to low"
+        },
+        "pagination": {
+            "previous": "Previous",
+            "next": "Next",
+            "page": "Page {current} of {total}"
+        },
+        "characteristics": {
+            "title": "Characteristics",
+            "rooms": "Rooms",
+            "bathrooms": "Bathrooms",
+            "parking": "Parking"
+        },
+        "description": {
+            "title": "Description"
+        },
+        "features": {
+            "title": "Features"
+        },
+        "contact": {
+            "title": "Interested in this property?",
+            "message": "Contact us now for more information or to arrange a viewing.",
+            "form": {
+                "name": "Full name",
+                "email": "Email",
+                "phone": "Phone",
+                "message": "Your message",
+                "send": "Send request",
+                "sending": "Sending...",
+                "success": "Your request has been sent successfully!",
+                "error": "An error occurred. Please try again.",
+                "errors": {
+                    "name": "Name is required",
+                    "email": "Email is required",
+                    "message": "Message is required"
+                }
+            }
+        },
+        "notFound": {
+            "title": "Property not found",
+            "message": "The property you are looking for does not exist or is no longer available.",
+            "backToList": "Back to list"
+        },
+        "meta": {
+            "title": "Properties | Our Property Selection",
+            "description": "Explore our real estate catalog. Apartments, houses, villas - find the property that matches your dreams."
+        }
+    },
+    "contact": {
+        "meta": {
+            "title": "Contact Us | MODELI",
+            "description": "Have a question? A project? Contact our commercial real estate experts. We're here to support you."
+        },
+        "title": "Contact Us",
+        "subtitle": "Have questions about our properties or services? Our team of experts is here to support you with your real estate project.",
+        "form": {
+            "title": "Send us a message",
+            "fields": {
+                "firstName": "First Name",
+                "lastName": "Last Name",
+                "email": "Email Address",
+                "phone": "Phone",
+                "company": "Company",
+                "subject": "Subject",
+                "message": "Your Message"
+            },
+            "placeholders": {
+                "firstName": "John",
+                "lastName": "Doe",
+                "email": " ",
+                "phone": "+1 234 567 890",
+                "company": "Your company name",
+                "subject": "Select a subject",
+                "message": "Describe your project or ask your question..."
+            },
+            "subjects": {
+                "property": "Property information request",
+                "service": "Service / Advisory request",
+                "investment": "Investment project",
+                "partnership": "Partnership proposal",
+                "other": "Other request"
+            },
+            "rgpd": {
+                "text": "I agree that my personal data may be used to process my request. See our",
+                "link": "privacy policy"
+            },
+            "send": "Send Message",
+            "sending": "Sending...",
+            "success": {
+                "title": "Message sent successfully!",
+                "message": "We have received your message and will respond as soon as possible.",
+                "notification": "Your message was sent successfully!"
+            },
+            "error": "An error occurred while sending. Please try again.",
+            "errors": {
+                "firstName": "First name is required",
+                "lastName": "Last name is required",
+                "email": "Email is required",
+                "emailInvalid": "Email is invalid",
+                "subject": "Please select a subject",
+                "message": "Message is required",
+                "messageTooShort": "Message must be at least 10 characters",
+                "rgpd": "You must accept the privacy policy",
+                "validation": "Please correct the errors in the form"
+            }
+        },
+        "info": {
+            "title": "Our Contact Information",
+            "address": {
+                "title": "Address"
+            },
+            "phone": {
+                "title": "Phone"
+            },
+            "email": {
+                "title": "Email"
+            },
+            "hours": {
+                "title": "Hours",
+                "weekdays": "Mon - Fri: 9:00 AM - 6:00 PM",
+                "weekend": "Sat - Sun: Closed"
+            }
+        },
+        "social": {
+            "title": "Follow Us",
+            "subtitle": "Stay connected with MODELI on social media."
+        },
+        "map": {
+            "placeholder": "Map to be integrated (Google Maps / Leaflet)"
+        }
+    },
+    "services": {
+        "meta": {
+            "title": "Our Services | MODELI",
+            "description": "Discover our expertise in commercial real estate: market research, sector analysis and investment advisory."
+        },
+        "hero": {
+            "title": "Our Services of Excellence",
+            "subtitle": "Tailored support to transform your real estate projects into guaranteed success."
+        },
+        "main": {
+            "title": "Our Expertise at Your Service",
+            "subtitle": "Comprehensive and personalized solutions to meet all your commercial real estate needs."
+        },
+        "market": {
+            "title": "Market Research",
+            "description": "Our team of experts analyzes the real estate market in depth to provide you with accurate and actionable data. We identify trends, opportunities and risks to optimize your investment strategy.",
+            "points": {
+                "market": "In-depth analysis of local and national markets",
+                "trends": "Identification of trends and forecasts",
+                "opportunities": "Detection of investment opportunities",
+                "report": "Detailed report with strategic recommendations"
+            },
+            "cta": "Request a study"
+        },
+        "analysis": {
+            "title": "Sector Analysis",
+            "description": "We evaluate the most promising business sectors and analyze local economic dynamics. Our approach allows you to target the best opportunities based on your field of activity.",
+            "points": {
+                "sector": "Detailed evaluation of business sectors",
+                "competition": "Competitive market analysis",
+                "positioning": "Strategic positioning recommendations",
+                "strategy": "Development of implementation strategy"
+            },
+            "cta": "Request an analysis"
+        },
+        "investment": {
+            "title": "Investment Advisory",
+            "description": "Personalized support to secure and maximize returns on your real estate investments. From identifying opportunities to post-acquisition monitoring, we are by your side at every step.",
+            "points": {
+                "assessment": "Assessment of profitability and risks",
+                "opportunities": "Identification of tailored opportunities",
+                "financing": "Assistance in financial structuring",
+                "monitoring": "Post-acquisition monitoring and optimization"
+            },
+            "cta": "Request advice"
+        },
+        "process": {
+            "title": "Our Process",
+            "subtitle": "A proven method to support you effectively",
+            "steps": {
+                "contact": {
+                    "title": "First Contact",
+                    "description": "Initial exchange to understand your specific needs and objectives."
+                },
+                "analysis": {
+                    "title": "Analysis & Study",
+                    "description": "Conducting an in-depth and personalized study of your project."
+                },
+                "proposal": {
+                    "title": "Proposal",
+                    "description": "Presentation of our recommendations and a detailed action plan."
+                },
+                "support": {
+                    "title": "Support",
+                    "description": "Continuous monitoring and assistance until your project is realized."
+                }
+            }
+        },
+        "testimonials": {
+            "title": "They Trust Us",
+            "subtitle": "Discover testimonials from our satisfied clients",
+            "items": {
+                "first": {
+                    "text": "MODELI supported us in our establishment in Paris. Their market study allowed us to choose the best location for our business. A true trusted partner.",
+                    "position": "General Director, TechCorp"
+                },
+                "second": {
+                    "text": "The sector analysis carried out by MODELI was decisive in our expansion strategy. Their expertise and responsiveness are exceptional.",
+                    "position": "CEO, InnovateLab"
+                },
+                "third": {
+                    "text": "Thanks to MODELI, we optimized our real estate investment. Their personalized advice and rigorous monitoring allowed us to maximize our profitability.",
+                    "position": "Financial Director, GlobalTrade"
+                }
+            }
+        },
+        "cta": {
+            "title": "Ready to Bring Your Project to Life?",
+            "subtitle": "Contact our experts today for a personalized consultation and discover how we can help you.",
+            "contact": "Contact Us",
+            "properties": "View Our Properties"
+        }
+    },
+    "blog": {
+        "meta": {
+            "title": "Blog & News | MODELI",
+            "description": "Discover our articles, advice and analysis on commercial real estate. Stay informed about the latest market trends."
+        },
+        "title": "Blog & News",
+        "subtitle": "Expert advice, market analysis and commercial real estate news.",
+        "loading": "Loading articles...",
+        "retry": "Retry",
+        "noResults": "No articles match your search",
+        "resetSearch": "Reset search",
+        "featured": {
+            "title": "Featured"
+        },
+        "search": {
+            "placeholder": "Search for an article..."
+        },
+        "sort": {
+            "recent": "Most recent",
+            "oldest": "Oldest",
+            "popular": "Most popular"
+        },
+        "categories": {
+            "title": "Categories",
+            "all": "All articles"
+        },
+        "recent": {
+            "title": "Recent articles"
+        },
+        "newsletter": {
+            "title": "Newsletter",
+            "description": "Receive our latest articles and advice directly in your inbox.",
+            "placeholder": "Your email",
+            "subscribe": "Subscribe",
+            "subscribing": "Subscribing...",
+            "success": "You are subscribed to our newsletter!",
+            "error": "An error occurred. Please try again."
+        },
+        "pagination": {
+            "previous": "Previous",
+            "next": "Next",
+            "page": "Page {current} of {total}"
+        }
+    },
+    "blogPost": {
+        "loading": "Loading article...",
+        "back": "Back to blog",
+        "minRead": "min read",
+        "share": "Share",
+        "tags": "Tags",
+        "linkCopied": "Link copied to clipboard!",
+        "linkCopyError": "Unable to copy link",
+        "notFound": {
+            "title": "Article not found",
+            "message": "The article you are looking for does not exist or has been deleted.",
+            "backToList": "Back to blog"
+        },
+        "related": {
+            "title": "Related articles"
+        }
+    },
+    "privacy": {
+        "title": "Politique de Confidentialité",
+        "content": "Contenu de la politique de confidentialité..."
+    }
+}

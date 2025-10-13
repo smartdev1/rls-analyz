@@ -1,0 +1,393 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "properties": "Biens",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact",
+    "language": "Langue"
+  },
+  "hero": {
+    "title": "Votre Partenaire en Immobilier d'Entreprise",
+    "subtitle": "Découvrez des biens d'exception et bénéficiez de nos services de conseil pour élever votre entreprise vers de nouveaux sommets.",
+    "cta": "Découvrir nos offres"
+  },
+  "home": {
+    "meta": {
+      "title": "RLS ANALYZ - Immobilier d'Entreprise | Biens Premium & Conseil",
+      "description": "Découvrez notre sélection de biens immobiliers d'entreprise premium. Expertise, conseil personnalisé et accompagnement pour vos projets."
+    },
+    "properties": {
+      "title": "Nos Biens d'Exception",
+      "subtitle": "Découvrez notre sélection de biens immobiliers d'entreprise dans les meilleurs emplacements.",
+      "noLocation": "Localisation non spécifiée",
+      "priceOnRequest": "Prix sur demande",
+      "empty": "Aucun bien disponible pour le moment",
+      "viewAll": "Voir tous les biens"
+    },
+    "services": {
+      "title": "Nos Services",
+      "subtitle": "Un accompagnement complet pour tous vos projets immobiliers d'entreprise.",
+      "cta": "Découvrir nos services",
+      "market": {
+        "title": "Étude de marché",
+        "description": "Analyse approfondie du marché immobilier pour optimiser vos investissements."
+      },
+      "analysis": {
+        "title": "Analyse sectorielle",
+        "description": "Évaluation détaillée des secteurs d'activité pour cibler les meilleures opportunités."
+      },
+      "investment": {
+        "title": "Conseil en investissement",
+        "description": "Accompagnement personnalisé pour sécuriser et rentabiliser vos projets immobiliers."
+      }
+    },
+    "why": {
+      "title": "Pourquoi Choisir RLS ANALYZ ?",
+      "subtitle": "Notre expertise et notre engagement font la différence dans chacun de vos projets.",
+      "expertise": {
+        "title": "Expertise",
+        "description": "Plus de 15 ans d'expérience dans l'immobilier d'entreprise."
+      },
+      "trust": {
+        "title": "Confiance",
+        "description": "Plus de 500 clients satisfaits nous font confiance."
+      },
+      "results": {
+        "title": "Résultats",
+        "description": "95% de taux de satisfaction sur 10+ accompagnements."
+      }
+    },
+    "blog": {
+      "title": "Actualités & Conseils",
+      "subtitle": "Restez informé des dernières tendances du marché immobilier d'entreprise.",
+      "viewAll": "Voir tous les articles"
+    },
+    "cta": {
+      "title": "Prêt à Investir dans Votre Avenir ?",
+      "subtitle": "Contactez nos experts dès maintenant pour une consultation personnalisée et découvrez comment nous pouvons vous accompagner.",
+      "button": "Contactez-nous"
+    }
+  },
+  "properties": {
+    "title": "Nos Biens Immobiliers",
+    "subtitle": "Découvrez notre sélection de propriétés exceptionnelles adaptées à vos besoins",
+    "loading": "Chargement des biens...",
+    "back": "Retour à la liste",
+    "priceOnRequest": "Prix sur demande",
+    "noResults": "Aucun bien ne correspond à vos critères de recherche",
+    "retry": "Réessayer",
+    "noLocation": "Localisation non précisée",
+    "filters": {
+      "title": "Filtres",
+      "reset": "Réinitialiser",
+      "search": "Recherche",
+      "searchPlaceholder": "Rechercher un bien...",
+      "type": "Type de bien",
+      "allTypes": "Tous les types",
+      "price": "Prix",
+      "minPrice": "Prix min",
+      "maxPrice": "Prix max",
+      "surface": "Surface",
+      "minSurface": "Surface min",
+      "maxSurface": "Surface max",
+      "location": "Localisation",
+      "allLocations": "Toutes les localisations",
+      "results": "{count} bien(s) trouvé(s)"
+    },
+    "sort": {
+      "label": "Trier par",
+      "recent": "Plus récents",
+      "priceAsc": "Prix croissant",
+      "priceDesc": "Prix décroissant",
+      "surfaceAsc": "Surface croissante",
+      "surfaceDesc": "Surface décroissante"
+    },
+    "pagination": {
+      "previous": "Précédent",
+      "next": "Suivant",
+      "page": "Page {current} sur {total}"
+    },
+    "characteristics": {
+      "title": "Caractéristiques",
+      "rooms": "Pièces",
+      "bathrooms": "Salles de bain",
+      "parking": "Parking"
+    },
+    "description": {
+      "title": "Description"
+    },
+    "features": {
+      "title": "Équipements"
+    },
+    "contact": {
+      "title": "Intéressé par ce bien ?",
+      "message": "Contactez-nous dès maintenant pour obtenir plus d'informations ou organiser une visite.",
+      "form": {
+        "name": "Nom complet",
+        "email": "Email",
+        "phone": "Téléphone",
+        "message": "Votre message",
+        "send": "Envoyer la demande",
+        "sending": "Envoi en cours...",
+        "success": "Votre demande a été envoyée avec succès !",
+        "error": "Une erreur est survenue. Veuillez réessayer.",
+        "errors": {
+          "name": "Le nom est requis",
+          "email": "L'email est requis",
+          "message": "Le message est requis"
+        }
+      }
+    },
+    "notFound": {
+      "title": "Bien introuvable",
+      "message": "Le bien que vous recherchez n'existe pas ou n'est plus disponible.",
+      "backToList": "Retour à la liste"
+    },
+    "meta": {
+      "title": "Biens Immobiliers | Notre Sélection de Propriétés",
+      "description": "Explorez notre catalogue de biens immobiliers. Appartements, maisons, villas - trouvez la propriété qui correspond à vos rêves."
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contactez-nous | RLS ANALYZ",
+      "description": "Une question ? Un projet ? Contactez nos experts en immobilier d'entreprise. Nous sommes à votre écoute pour vous accompagner."
+    },
+    "title": "Contactez-nous",
+    "subtitle": "Une question sur nos biens ou nos services ? Notre équipe d'experts est à votre écoute pour vous accompagner dans votre projet immobilier.",
+    "form": {
+      "title": "Envoyez-nous un message",
+      "fields": {
+        "firstName": "Prénom",
+        "lastName": "Nom",
+        "email": "Adresse email",
+        "phone": "Téléphone",
+        "company": "Entreprise",
+        "subject": "Sujet",
+        "message": "Votre message"
+      },
+      "placeholders": {
+        "firstName": "Jean",
+        "lastName": "Dupont",
+        "email": " ",
+        "phone": "+33 6 12 34 56 78",
+        "company": "Nom de votre entreprise",
+        "subject": "Sélectionnez un sujet",
+        "message": "Décrivez votre projet ou posez votre question..."
+      },
+      "subjects": {
+        "property": "Demande d'information sur un bien",
+        "service": "Demande de service / conseil",
+        "investment": "Projet d'investissement",
+        "partnership": "Proposition de partenariat",
+        "other": "Autre demande"
+      },
+      "rgpd": {
+        "text": "J'accepte que mes données personnelles soient utilisées pour traiter ma demande. Consultez notre",
+        "link": "politique de confidentialité"
+      },
+      "send": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": {
+        "title": "Message envoyé avec succès !",
+        "message": "Nous avons bien reçu votre message et nous vous répondrons dans les plus brefs délais.",
+        "notification": "Votre message a été envoyé avec succès !"
+      },
+      "error": "Une erreur est survenue lors de l'envoi. Veuillez réessayer.",
+      "errors": {
+        "firstName": "Le prénom est requis",
+        "lastName": "Le nom est requis",
+        "email": "L'email est requis",
+        "emailInvalid": "L'email n'est pas valide",
+        "subject": "Veuillez sélectionner un sujet",
+        "message": "Le message est requis",
+        "messageTooShort": "Le message doit contenir au moins 10 caractères",
+        "rgpd": "Vous devez accepter la politique de confidentialité",
+        "validation": "Veuillez corriger les erreurs dans le formulaire"
+      }
+    },
+    "info": {
+      "title": "Nos coordonnées",
+      "address": {
+        "title": "Adresse"
+      },
+      "phone": {
+        "title": "Téléphone"
+      },
+      "email": {
+        "title": "Email"
+      },
+      "hours": {
+        "title": "Horaires",
+        "weekdays": "Lun - Ven : 9h00 - 18h00",
+        "weekend": "Sam - Dim : Fermé"
+      }
+    },
+    "social": {
+      "title": "Suivez-nous",
+      "subtitle": "Restez connecté avec RLS ANALYZ sur les réseaux sociaux."
+    },
+    "map": {
+      "placeholder": "Carte à intégrer (Google Maps / Leaflet)"
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "Nos Services | RLS ANALYZ",
+      "description": "Découvrez nos services d'expertise en immobilier d'entreprise : étude de marché, analyse sectorielle et conseil en investissement."
+    },
+    "hero": {
+      "title": "Nos Services d'Excellence",
+      "subtitle": "Un accompagnement sur-mesure pour transformer vos projets immobiliers en succès garantis."
+    },
+    "main": {
+      "title": "Notre Expertise à Votre Service",
+      "subtitle": "Des solutions complètes et personnalisées pour répondre à tous vos besoins en immobilier d'entreprise."
+    },
+    "market": {
+      "title": "Étude de Marché",
+      "description": "Notre équipe d'experts analyse en profondeur le marché immobilier pour vous fournir des données précises et actionnables. Nous identifions les tendances, les opportunités et les risques pour optimiser votre stratégie d'investissement.",
+      "points": {
+        "market": "Analyse approfondie du marché local et national",
+        "trends": "Identification des tendances et prévisions",
+        "opportunities": "Détection des opportunités d'investissement",
+        "report": "Rapport détaillé avec recommandations stratégiques"
+      },
+      "cta": "Demander une étude"
+    },
+    "analysis": {
+      "title": "Analyse Sectorielle",
+      "description": "Nous évaluons les secteurs d'activité les plus porteurs et analysons la dynamique économique locale. Notre approche vous permet de cibler les meilleures opportunités en fonction de votre domaine d'activité.",
+      "points": {
+        "sector": "Évaluation détaillée des secteurs d'activité",
+        "competition": "Analyse concurrentielle du marché",
+        "positioning": "Recommandations de positionnement stratégique",
+        "strategy": "Élaboration de stratégie d'implantation"
+      },
+      "cta": "Demander une analyse"
+    },
+    "investment": {
+      "title": "Conseil en Investissement",
+      "description": "Un accompagnement personnalisé pour sécuriser et rentabiliser vos investissements immobiliers. De l'identification des opportunités au suivi post-acquisition, nous sommes à vos côtés à chaque étape.",
+      "points": {
+        "assessment": "Évaluation de la rentabilité et des risques",
+        "opportunities": "Identification d'opportunités sur-mesure",
+        "financing": "Assistance dans le montage financier",
+        "monitoring": "Suivi et optimisation post-acquisition"
+      },
+      "cta": "Demander un conseil"
+    },
+    "process": {
+      "title": "Notre Processus",
+      "subtitle": "Une méthode éprouvée pour vous accompagner efficacement",
+      "steps": {
+        "contact": {
+          "title": "Premier Contact",
+          "description": "Échange initial pour comprendre vos besoins et objectifs spécifiques."
+        },
+        "analysis": {
+          "title": "Analyse & Étude",
+          "description": "Réalisation d'une étude approfondie et personnalisée de votre projet."
+        },
+        "proposal": {
+          "title": "Proposition",
+          "description": "Présentation de nos recommandations et d'un plan d'action détaillé."
+        },
+        "support": {
+          "title": "Accompagnement",
+          "description": "Suivi continu et assistance jusqu'à la concrétisation de votre projet."
+        }
+      }
+    },
+    "testimonials": {
+      "title": "Ils Nous Font Confiance",
+      "subtitle": "Découvrez les témoignages de nos clients satisfaits",
+      "items": {
+        "first": {
+          "text": "RLS ANALYZ nous a accompagnés dans notre implantation à Paris. Leur étude de marché nous a permis de choisir le meilleur emplacement pour notre activité. Un vrai partenaire de confiance.",
+          "position": "Directrice Générale, TechCorp"
+        },
+        "second": {
+          "text": "L'analyse sectorielle réalisée par RLS ANALYZ a été déterminante dans notre stratégie d'expansion. Leur expertise et leur réactivité sont exceptionnelles.",
+          "position": "CEO, InnovateLab"
+        },
+        "third": {
+          "text": "Grâce à RLS ANALYZ, nous avons optimisé notre investissement immobilier. Leur conseil personnalisé et leur suivi rigoureux nous ont permis de maximiser notre rentabilité.",
+          "position": "Directrice Financière, GlobalTrade"
+        }
+      }
+    },
+    "cta": {
+      "title": "Prêt à Donner Vie à Votre Projet ?",
+      "subtitle": "Contactez nos experts dès aujourd'hui pour une consultation personnalisée et découvrez comment nous pouvons vous aider.",
+      "contact": "Contactez-nous",
+      "properties": "Voir nos biens"
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog & Actualités | RLS ANALYZ",
+      "description": "Découvrez nos articles, conseils et analyses sur l'immobilier d'entreprise. Restez informé des dernières tendances du marché."
+    },
+    "title": "Blog & Actualités",
+    "subtitle": "Conseils d'experts, analyses de marché et actualités de l'immobilier d'entreprise.",
+    "loading": "Chargement des articles...",
+    "retry": "Réessayer",
+    "noResults": "Aucun article ne correspond à votre recherche",
+    "resetSearch": "Réinitialiser la recherche",
+    "featured": {
+      "title": "À la une"
+    },
+    "search": {
+      "placeholder": "Rechercher un article..."
+    },
+    "sort": {
+      "recent": "Plus récents",
+      "oldest": "Plus anciens",
+      "popular": "Les plus populaires"
+    },
+    "categories": {
+      "title": "Catégories",
+      "all": "Tous les articles"
+    },
+    "recent": {
+      "title": "Articles récents"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Recevez nos derniers articles et conseils directement dans votre boîte mail.",
+      "placeholder": "Votre email",
+      "subscribe": "S'abonner",
+      "subscribing": "Inscription...",
+      "success": "Vous êtes inscrit à notre newsletter !",
+      "error": "Une erreur est survenue. Veuillez réessayer."
+    },
+    "pagination": {
+      "previous": "Précédent",
+      "next": "Suivant",
+      "page": "Page {current} sur {total}"
+    }
+  },
+  "blogPost": {
+    "loading": "Chargement de l'article...",
+    "back": "Retour au blog",
+    "minRead": "min de lecture",
+    "share": "Partager",
+    "tags": "Tags",
+    "linkCopied": "Lien copié dans le presse-papiers !",
+    "linkCopyError": "Impossible de copier le lien",
+    "notFound": {
+      "title": "Article introuvable",
+      "message": "L'article que vous recherchez n'existe pas ou a été supprimé.",
+      "backToList": "Retour au blog"
+    },
+    "related": {
+      "title": "Articles similaires"
+    }
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "content": "Contenu de la politique de confidentialité..."
+  }
+}

@@ -1,0 +1,375 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables CSS personnalisées MODELI */
+:root {
+  --color-primary: #0A3D62;
+  --color-secondary: #3C6382;
+  --color-accent: #F8C291;
+  --color-neutral: #F5F6FA;
+  --color-text: #2D3436;
+  --color-white: #FFFFFF;
+  --transition-smooth: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* === STYLES DE BASE === */
+@layer base {
+  * {
+    @apply antialiased;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-body text-text bg-neutral;
+    @apply leading-relaxed;
+  }
+
+  /* Typographies principales */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-primary font-bold;
+    @apply leading-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+
+  h5 {
+    @apply text-lg md:text-xl;
+  }
+
+  h6 {
+    @apply text-base md:text-lg;
+  }
+
+  p {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+
+  a {
+    @apply transition-colors duration-300;
+  }
+
+  /* Sélection de texte */
+  ::selection {
+    @apply bg-accent text-primary;
+  }
+
+  ::-moz-selection {
+    @apply bg-accent text-primary;
+  }
+}
+
+/* === COMPOSANTS RÉUTILISABLES === */
+@layer components {
+  /* Conteneur principal */
+  .container-modeli {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Ombres personnalisées */
+  .shadow-soft {
+    box-shadow: 0 4px 6px -1px rgba(10, 61, 98, 0.08),
+                0 2px 4px -1px rgba(10, 61, 98, 0.04);
+  }
+
+  .shadow-card {
+    box-shadow: 0 10px 25px -5px rgba(10, 61, 98, 0.15),
+                0 8px 10px -6px rgba(10, 61, 98, 0.08);
+  }
+
+  .shadow-elevation {
+    box-shadow: 0 20px 40px -10px rgba(10, 61, 98, 0.2),
+                0 15px 20px -10px rgba(10, 61, 98, 0.12);
+  }
+
+  /* Boutons de base */
+  .btn-primary {
+    @apply px-6 py-3 rounded-2xl font-semibold text-white bg-primary;
+    @apply hover:bg-secondary transition-all duration-500 ease-in-out;
+    @apply shadow-md hover:shadow-lg;
+    @apply focus:ring-2 focus:ring-accent focus:outline-none;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-2xl font-semibold text-primary bg-accent;
+    @apply hover:bg-accent/90 transition-all duration-500 ease-in-out;
+    @apply shadow-md hover:shadow-lg;
+    @apply focus:ring-2 focus:ring-primary focus:outline-none;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 rounded-2xl font-semibold text-primary;
+    @apply border-2 border-primary bg-transparent;
+    @apply hover:bg-primary hover:text-white transition-all duration-500 ease-in-out;
+    @apply focus:ring-2 focus:ring-accent focus:outline-none;
+  }
+
+  /* Cartes */
+  .card-modeli {
+    @apply bg-white rounded-2xl overflow-hidden shadow-soft;
+    @apply hover:shadow-card transition-all duration-500 ease-smooth;
+  }
+
+  /* Séparateurs de section */
+  .section-divider {
+    @apply w-16 h-1 bg-accent mx-auto rounded-full;
+  }
+
+  /* Overlay */
+  .overlay-gradient {
+    @apply absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-secondary/95;
+  }
+
+  /* Badge */
+  .badge-modeli {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold;
+    @apply bg-accent/20 text-primary border border-accent/30;
+  }
+
+  /* Input de base */
+  .input-modeli {
+    @apply w-full px-4 py-3 rounded-xl border-2 border-gray-200;
+    @apply focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none;
+    @apply transition-all duration-300 bg-white;
+  }
+}
+
+/* === UTILITAIRES PERSONNALISÉS === */
+@layer utilities {
+  /* Transitions personnalisées */
+  .ease-smooth {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  /* Espacements aérés */
+  .spacing-section {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  .spacing-content {
+    @apply space-y-6 md:space-y-8 lg:space-y-10;
+  }
+
+  /* Glassmorphism */
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Gradient de texte */
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+
+  .text-gradient-accent {
+    @apply bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent;
+  }
+
+  /* Hover lift effect */
+  .hover-lift {
+    @apply transition-transform duration-300 ease-out;
+    @apply hover:-translate-y-2;
+  }
+
+  /* Hover grow effect */
+  .hover-grow {
+    @apply transition-transform duration-300 ease-out;
+    @apply hover:scale-105;
+  }
+
+  /* Focus visible pour accessibilité */
+  .focus-visible-ring {
+    @apply focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2;
+    @apply focus-visible:outline-none;
+  }
+
+  /* Truncate multi-line */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Scrollbar personnalisée */
+  .scrollbar-modeli::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .scrollbar-modeli::-webkit-scrollbar-track {
+    @apply bg-neutral;
+    border-radius: 10px;
+  }
+
+  .scrollbar-modeli::-webkit-scrollbar-thumb {
+    @apply bg-accent;
+    border-radius: 10px;
+  }
+
+  .scrollbar-modeli::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent/80;
+  }
+
+  /* Masquer les scrollbars */
+  .scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* === ANIMATIONS PERSONNALISÉES === */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Classes d'animation */
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 0.6s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.6s ease-out;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .spacing-section {
+    @apply py-12;
+  }
+}
+
+/* === PERFORMANCE === */
+/* Optimisation pour les animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* === PRINT === */
+@media print {
+  body {
+    @apply bg-white text-black;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}

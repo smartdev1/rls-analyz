@@ -1,0 +1,26 @@
+{
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "files": [],
+  "compilerOptions": {
+    "types": ["nuxt"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],        // If your source code is in src/
+      "@/assets/*": ["./assets/*"] // For assets folder at project root
+    }
+  },
+  "references": [
+    {
+      "path": "./.nuxt/tsconfig.app.json"
+    },
+    {
+      "path": "./.nuxt/tsconfig.server.json"
+    },
+    {
+      "path": "./.nuxt/tsconfig.shared.json"
+    },
+    {
+      "path": "./.nuxt/tsconfig.node.json"
+    }
+  ]
+}
