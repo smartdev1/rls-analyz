@@ -387,7 +387,121 @@
     }
   },
   "privacy": {
+    "meta": {
+      "title": "Politique de Confidentialité | MODELI",
+      "description": "Découvrez comment MODELI collecte, utilise et protège vos données personnelles conformément au RGPD."
+    },
     "title": "Politique de Confidentialité",
-    "content": "Contenu de la politique de confidentialité..."
+    "subtitle": "Votre vie privée est importante pour nous. Découvrez comment nous protégeons vos données.",
+    "lastUpdated": "Dernière mise à jour",
+    "intro": "MODELI (ci-après « nous », « notre » ou « nos ») s'engage à protéger la confidentialité de vos données personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons, partageons et protégeons vos informations personnelles conformément au Règlement Général sur la Protection des Données (RGPD).",
+    "section1": {
+      "title": "Données Collectées",
+      "intro": "Nous collectons différents types de données personnelles lorsque vous utilisez nos services :",
+      "items": {
+        "identity": {
+          "title": "Données d'identité",
+          "description": "Nom, prénom, adresse postale"
+        },
+        "contact": {
+          "title": "Données de contact",
+          "description": "Adresse email, numéro de téléphone"
+        },
+        "navigation": {
+          "title": "Données de navigation",
+          "description": "Pages visitées, durée de visite, actions effectuées"
+        },
+        "technical": {
+          "title": "Données techniques",
+          "description": "Adresse IP, type de navigateur, système d'exploitation"
+        }
+      }
+    },
+    "section2": {
+      "title": "Utilisation des Données",
+      "intro": "Vos données personnelles sont utilisées pour :",
+      "items": {
+        "respond": "Répondre à vos demandes de contact et d'information",
+        "improve": "Améliorer nos services et votre expérience utilisateur",
+        "inform": "Vous informer de nos actualités et offres (avec votre consentement)",
+        "analyze": "Analyser l'utilisation de notre site web",
+        "comply": "Respecter nos obligations légales et réglementaires"
+      }
+    },
+    "section3": {
+      "title": "Partage des Données",
+      "intro": "Nous ne vendons jamais vos données personnelles. Nous pouvons partager vos informations uniquement avec :",
+      "items": {
+        "providers": "Nos prestataires de services techniques (hébergement, analytics)",
+        "legal": "Les autorités légales si requis par la loi",
+        "consent": "Toute autre partie avec votre consentement explicite"
+      }
+    },
+    "section4": {
+      "title": "Cookies et Technologies Similaires",
+      "intro": "Nous utilisons des cookies pour améliorer votre expérience sur notre site :",
+      "types": {
+        "essential": {
+          "title": "Cookies essentiels",
+          "description": "Nécessaires au fonctionnement du site (navigation, sécurité)"
+        },
+        "analytics": {
+          "title": "Cookies analytiques",
+          "description": "Pour comprendre comment vous utilisez notre site et l'améliorer"
+        },
+        "preferences": {
+          "title": "Cookies de préférences",
+          "description": "Pour mémoriser vos choix (langue, paramètres)"
+        }
+      }
+    },
+    "section5": {
+      "title": "Vos Droits",
+      "intro": "Conformément au RGPD, vous disposez des droits suivants :",
+      "rights": {
+        "access": {
+          "title": "Droit d'accès",
+          "description": "Obtenir une copie de vos données personnelles"
+        },
+        "rectification": {
+          "title": "Droit de rectification",
+          "description": "Corriger vos données inexactes ou incomplètes"
+        },
+        "deletion": {
+          "title": "Droit à l'effacement",
+          "description": "Demander la suppression de vos données"
+        },
+        "portability": {
+          "title": "Droit à la portabilité",
+          "description": "Recevoir vos données dans un format structuré"
+        },
+        "opposition": {
+          "title": "Droit d'opposition",
+          "description": "Vous opposer au traitement de vos données"
+        },
+        "limitation": {
+          "title": "Droit à la limitation",
+          "description": "Limiter le traitement de vos données"
+        }
+      }
+    },
+    "section6": {
+      "title": "Sécurité des Données",
+      "content": "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre tout accès non autorisé, perte, destruction ou altération. Cela inclut le chiffrement des données sensibles, l'accès restreint aux données, et des audits de sécurité réguliers."
+    },
+    "section7": {
+      "title": "Conservation des Données",
+      "content": "Nous conservons vos données personnelles uniquement pendant la durée nécessaire aux finalités pour lesquelles elles ont été collectées, ou conformément aux obligations légales applicables. Les données de contact sont généralement conservées pendant 3 ans après votre dernier contact avec nous."
+    },
+    "section8": {
+      "title": "Modifications de cette Politique",
+      "content": "Nous pouvons mettre à jour cette politique de confidentialité périodiquement pour refléter les changements dans nos pratiques ou pour d'autres raisons opérationnelles, légales ou réglementaires. Nous vous encourageons à consulter régulièrement cette page pour rester informé de nos pratiques en matière de protection des données."
+    },
+    "contact": {
+      "title": "Nous Contacter",
+      "intro": "Pour toute question concernant cette politique de confidentialité ou pour exercer vos droits, contactez-nous :",
+      "phone": "Téléphone",
+      "address": "Adresse"
+    }
   }
 }

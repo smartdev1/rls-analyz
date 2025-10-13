@@ -386,8 +386,122 @@
             "title": "Related articles"
         }
     },
-    "privacy": {
-        "title": "Politique de Confidentialité",
-        "content": "Contenu de la politique de confidentialité..."
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy | MODELI",
+      "description": "Learn how MODELI collects, uses and protects your personal data in accordance with GDPR."
+    },
+    "title": "Privacy Policy",
+    "subtitle": "Your privacy matters to us. Learn how we protect your data.",
+    "lastUpdated": "Last updated",
+    "intro": "MODELI (hereinafter 'we', 'our' or 'us') is committed to protecting the confidentiality of your personal data. This privacy policy explains how we collect, use, share and protect your personal information in accordance with the General Data Protection Regulation (GDPR).",
+    "section1": {
+      "title": "Data Collected",
+      "intro": "We collect different types of personal data when you use our services:",
+      "items": {
+        "identity": {
+          "title": "Identity data",
+          "description": "First name, last name, postal address"
+        },
+        "contact": {
+          "title": "Contact data",
+          "description": "Email address, phone number"
+        },
+        "navigation": {
+          "title": "Navigation data",
+          "description": "Pages visited, visit duration, actions performed"
+        },
+        "technical": {
+          "title": "Technical data",
+          "description": "IP address, browser type, operating system"
+        }
+      }
+    },
+    "section2": {
+      "title": "Data Usage",
+      "intro": "Your personal data is used to:",
+      "items": {
+        "respond": "Respond to your contact and information requests",
+        "improve": "Improve our services and your user experience",
+        "inform": "Inform you of our news and offers (with your consent)",
+        "analyze": "Analyze the use of our website",
+        "comply": "Comply with our legal and regulatory obligations"
+      }
+    },
+    "section3": {
+      "title": "Data Sharing",
+      "intro": "We never sell your personal data. We may share your information only with:",
+      "items": {
+        "providers": "Our technical service providers (hosting, analytics)",
+        "legal": "Legal authorities if required by law",
+        "consent": "Any other party with your explicit consent"
+      }
+    },
+    "section4": {
+      "title": "Cookies and Similar Technologies",
+      "intro": "We use cookies to improve your experience on our site:",
+      "types": {
+        "essential": {
+          "title": "Essential cookies",
+          "description": "Necessary for site operation (navigation, security)"
+        },
+        "analytics": {
+          "title": "Analytics cookies",
+          "description": "To understand how you use our site and improve it"
+        },
+        "preferences": {
+          "title": "Preference cookies",
+          "description": "To remember your choices (language, settings)"
+        }
+      }
+    },
+    "section5": {
+      "title": "Your Rights",
+      "intro": "In accordance with GDPR, you have the following rights:",
+      "rights": {
+        "access": {
+          "title": "Right of access",
+          "description": "Obtain a copy of your personal data"
+        },
+        "rectification": {
+          "title": "Right of rectification",
+          "description": "Correct your inaccurate or incomplete data"
+        },
+        "deletion": {
+          "title": "Right to erasure",
+          "description": "Request deletion of your data"
+        },
+        "portability": {
+          "title": "Right to portability",
+          "description": "Receive your data in a structured format"
+        },
+        "opposition": {
+          "title": "Right to object",
+          "description": "Object to the processing of your data"
+        },
+        "limitation": {
+          "title": "Right to restriction",
+          "description": "Restrict the processing of your data"
+        }
+      }
+    },
+    "section6": {
+      "title": "Data Security",
+      "content": "We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, loss, destruction or alteration. This includes encryption of sensitive data, restricted data access, and regular security audits."
+    },
+    "section7": {
+      "title": "Data Retention",
+      "content": "We retain your personal data only for as long as necessary for the purposes for which it was collected, or in accordance with applicable legal obligations. Contact data is generally retained for 3 years after your last contact with us."
+    },
+    "section8": {
+      "title": "Changes to this Policy",
+      "content": "We may update this privacy policy periodically to reflect changes in our practices or for other operational, legal or regulatory reasons. We encourage you to regularly review this page to stay informed about our data protection practices."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "intro": "For any questions regarding this privacy policy or to exercise your rights, contact us:",
+      "phone": "Phone",
+      "address": "Address"
     }
+  }
 }
