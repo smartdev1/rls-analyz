@@ -502,6 +502,10 @@
       "intro": "Pour toute question concernant cette politique de confidentialité ou pour exercer vos droits, contactez-nous :",
       "phone": "Téléphone",
       "address": "Adresse"
+    },
+    "terms": {
+      "title": "Conditions d'utilisation",
+      "subtitle": "Conditions d'utilisation"
     }
   }
 }

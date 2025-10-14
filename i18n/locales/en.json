@@ -502,6 +502,10 @@
             "intro": "For any questions regarding this privacy policy or to exercise your rights, contact us:",
             "phone": "Phone",
             "address": "Address"
+        },
+        "terms": {
+            "title": "Conditions d'utilisation",
+            "subtitle": "Conditions d'utilisation"
         }
     }
 }

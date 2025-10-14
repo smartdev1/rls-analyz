@@ -51,10 +51,10 @@
                   d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                 />
               </svg>
-              123 Avenue des Champs-Élysées, 75008 Paris
+              Abidjan - Côte d'Ivoire
             </p>
             <a
-              href="tel:+33142367788"
+              href="tel:+2250586028886"
               class="flex items-center hover:text-accent transition-colors"
             >
               <svg
@@ -71,10 +71,10 @@
                   d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                 />
               </svg>
-              +33 1 42 36 77 88
+              +225 05 86 02 88 86
             </a>
             <a
-              href="mailto:contact@modeli.fr"
+              href="mailto:contact@rls-analyz.fr"
               class="flex items-center hover:text-accent transition-colors"
             >
               <svg
@@ -91,7 +91,7 @@
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
-              contact@modeli.fr
+              contact@rls-analyz.fr
             </a>
           </div>
         </div>
@@ -190,7 +190,7 @@
           </p>
           <div class="flex space-x-3">
             <a
-              href="https://facebook.com/modeli"
+              href="https://facebook.com/rls-analyz"
               target="_blank"
               rel="noopener noreferrer"
               class="w-10 h-10 bg-white/10 hover:bg-accent rounded-full flex items-center justify-center transition-all duration-300 group"
@@ -206,7 +206,7 @@
               </svg>
             </a>
             <a
-              href="https://twitter.com/modeli"
+              href="https://twitter.com/rls-analyz"
               target="_blank"
               rel="noopener noreferrer"
               class="w-10 h-10 bg-white/10 hover:bg-accent rounded-full flex items-center justify-center transition-all duration-300 group"
@@ -222,7 +222,7 @@
               </svg>
             </a>
             <a
-              href="https://linkedin.com/company/modeli"
+              href="https://linkedin.com/company/rls-analyz"
               target="_blank"
               rel="noopener noreferrer"
               class="w-10 h-10 bg-white/10 hover:bg-accent rounded-full flex items-center justify-center transition-all duration-300 group"
@@ -238,7 +238,7 @@
               </svg>
             </a>
             <a
-              href="https://instagram.com/modeli"
+              href="https://instagram.com/rls-analyz"
               target="_blank"
               rel="noopener noreferrer"
               class="w-10 h-10 bg-white/10 hover:bg-accent rounded-full flex items-center justify-center transition-all duration-300 group"
@@ -265,18 +265,18 @@
           v-motion="fadeIn"
           class="flex flex-col md:flex-row justify-between items-center text-sm text-white/60 space-y-2 md:space-y-0"
         >
-          <p>© {{ currentYear }} MODELI. Tous droits réservés.</p>
+          <p>© {{ currentYear }} RLS - ANALYZ. Tous droits réservés.</p>
           <p>
             Made with
             <span class="text-accent mx-1">❤️</span>
             by
             <a
-              href="https://numeryx.fr"
+              href="https://linkedin.com/in/aristide-ghislain-adouko"
               target="_blank"
               rel="noopener noreferrer"
               class="text-accent hover:underline transition-colors"
             >
-              Numeryx.fr
+              SMARTDEV TEAMS - CIV
             </a>
           </p>
         </div>
