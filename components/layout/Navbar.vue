@@ -16,7 +16,6 @@
           @click="uiStore.closeMobileMenu()"
         >
           <div class="relative">
-            
             <div class="absolute -top-1 -right-1 w-2 h-2 bg-accent rounded-full animate-pulse"></div>
           </div>
           <span class="text-2xl font-heading font-bold text-primary">
@@ -45,6 +44,7 @@
             <button
               @click="toggleLangMenu"
               class="flex items-center space-x-2 px-3 py-2 rounded-xl hover:bg-neutral transition-colors duration-300"
+              aria-label="Menu langue"
             >
               <span class="text-lg">{{ langStore.currentLocaleFlag }}</span>
               <span class="text-sm font-semibold text-text">
@@ -77,8 +77,8 @@
             >
               <div
                 v-if="showLangMenu"
-                v-click-outside="closeLangMenu"
-                class="absolute top-full right-0 mt-2 w-40 bg-white rounded-xl shadow-elevation overflow-hidden"
+                ref="langMenuRef"
+                class="absolute top-full right-0 mt-2 w-40 bg-white rounded-xl shadow-elevation overflow-hidden z-50"
               >
                 <button
                   v-for="locale in langStore.availableLocales"
@@ -205,6 +205,30 @@ import { useLangStore } from '../../store/useLangStore'
 import type { Locale } from '../../store/useLangStore'
 import ButtonCTA from '../../components/ui/ButtonCTA.vue'
 
+// Composable click outside
+const useClickOutside = (callback: () => void) => {
+  const target = ref<HTMLElement | null>(null)
+
+  const onClick = (event: Event) => {
+    if (target.value && !target.value.contains(event.target as Node)) {
+      callback()
+    }
+  }
+
+  onMounted(() => {
+    // Timeout pour éviter le déclenchement immédiat
+    setTimeout(() => {
+      document.addEventListener('click', onClick)
+    }, 0)
+  })
+
+  onUnmounted(() => {
+    document.removeEventListener('click', onClick)
+  })
+
+  return target
+}
+
 // Stores
 const uiStore = useUIStore()
 const langStore = useLangStore()
@@ -224,9 +248,15 @@ const navLinks = [
 
 // State pour le menu langue
 const showLangMenu = ref(false)
+const langMenuRef = useClickOutside(() => {
+  if (showLangMenu.value) {
+    closeLangMenu()
+  }
+})
 
 // Toggle language menu
-const toggleLangMenu = () => {
+const toggleLangMenu = (event: Event) => {
+  event.stopPropagation() // Empêche la propagation vers le document
   showLangMenu.value = !showLangMenu.value
 }
 
@@ -236,40 +266,25 @@ const closeLangMenu = () => {
 
 // Change language
 const changeLang = async (langCode: Locale) => {
-  await langStore.setLocale(langCode)
-  showLangMenu.value = false
-  uiStore.closeMobileMenu()
-  
-  // Notification optionnelle
-  uiStore.notifySuccess(
-    langCode === 'fr' ? 'Langue changée en Français' : 'Language changed to English'
-  )
+  try {
+    await langStore.setLocale(langCode)
+    closeLangMenu()
+    uiStore.closeMobileMenu()
+    
+    // Notification optionnelle
+    uiStore.notifySuccess(
+      langCode === 'fr' ? 'Langue changée en Français' : 'Language changed to English'
+    )
+  } catch (error) {
+    console.error('Erreur lors du changement de langue:', error)
+    uiStore.notifyError('Erreur lors du changement de langue')
+  }
 }
 
 // Navigation avec fermeture du menu mobile
 const navigateAndClose = (path: string) => {
   navigateTo(path)
   uiStore.closeMobileMenu()
-}
-
-// Directive personnalisée pour fermer au clic extérieur
-const vClickOutside = {
-  mounted(el: HTMLElement, binding: any) {
-    // Extend HTMLElement to allow custom property
-    const _el = el as HTMLElement & { clickOutsideEvent?: (event: Event) => void }
-    _el.clickOutsideEvent = (event: Event) => {
-      if (!(_el === event.target || _el.contains(event.target as Node))) {
-        binding.value()
-      }
-    }
-    document.addEventListener('click', _el.clickOutsideEvent)
-  },
-  unmounted(el: HTMLElement) {
-    const _el = el as HTMLElement & { clickOutsideEvent?: (event: Event) => void }
-    if (_el.clickOutsideEvent) {
-      document.removeEventListener('click', _el.clickOutsideEvent)
-    }
-  }
 }
 </script>
 
@@ -289,5 +304,10 @@ const vClickOutside = {
 /* Amélioration de l'animation du burger */
 button[aria-label="Menu"] svg {
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Amélioration de la visibilité du menu langue */
+.shadow-elevation {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 </style>

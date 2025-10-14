@@ -1,23 +1,14 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <HeroSection
-      :title="$t('hero.title')"
-      :subtitle="$t('hero.subtitle')"
-      :cta-text="$t('hero.cta')"
+    <HeroSection :title="$t('hero.title')" :subtitle="$t('hero.subtitle')" :cta-text="$t('hero.cta')"
       background-image="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=1080&fit=crop"
-      :show-arrow="true"
-      :show-scroll-indicator="true"
-      @cta-click="navigateTo(localePath({name: 'biens'}))"
-    />
+      :show-arrow="true" :show-scroll-indicator="true" @cta-click="navigateTo(localePath({ name: 'biens' }))" />
 
     <!-- Section Nos Biens d'Exception -->
     <section class="spacing-section bg-neutral">
       <div class="container-modeli">
-        <SectionTitle
-          :title="$t('home.properties.title')"
-          :subtitle="$t('home.properties.subtitle')"
-        />
+        <SectionTitle :title="$t('home.properties.title')" :subtitle="$t('home.properties.subtitle')" />
 
         <!-- Loader pour les biens -->
         <div v-if="propertyStore.loading" class="flex justify-center py-12">
@@ -25,19 +16,12 @@
         </div>
 
         <!-- Grille des biens -->
-        <div
-          v-else-if="featuredProperties.length > 0"
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
-          <CardProperty
-            v-for="property in featuredProperties"
-            :key="property.id"
-            :title="property.title.rendered"
+        <div v-else-if="featuredProperties.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <CardProperty v-for="property in featuredProperties" :key="property.id" :title="property.title.rendered"
             :image="property._embedded?.['wp:featuredmedia']?.[0]?.source_url || '/placeholder.jpg'"
             :location="property.acf?.location || $t('home.properties.noLocation')"
             :price="formatPrice(property.acf?.price)"
-            @click="navigateTo(localePath({name: 'biens-slug', params: { slug: property.slug }}))"
-          />
+            @click="navigateTo(localePath({ name: 'biens-slug', params: { slug: property.slug } }))" />
         </div>
 
         <!-- Message si aucun bien -->
@@ -47,21 +31,11 @@
 
         <!-- Bouton Voir tous les biens -->
         <div class="text-center mt-12">
-          <ButtonCTA @click="navigateTo(localePath({name: 'biens'}))">
+          <ButtonCTA @click="navigateTo(localePath({ name: 'biens' }))">
             {{ $t('home.properties.viewAll') }}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5 ml-2 inline-block"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 inline-block" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </ButtonCTA>
         </div>
@@ -71,81 +45,49 @@
     <!-- Section Nos Services -->
     <section class="spacing-section bg-white">
       <div class="container-modeli">
-        <SectionTitle
-          :title="$t('home.services.title')"
-          :subtitle="$t('home.services.subtitle')"
-        />
+        <SectionTitle :title="$t('home.services.title')" :subtitle="$t('home.services.subtitle')" />
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <CardService
-            v-for="service in services"
-            :key="service.titleKey"
-            :title="$t(service.titleKey)"
-            :description="$t(service.descriptionKey)"
-            :icon="service.icon"
-          />
+          <CardService v-for="service in services" :key="service.titleKey" :title="$t(service.titleKey)"
+            :description="$t(service.descriptionKey)" :icon="service.icon" />
         </div>
 
         <!-- CTA Services -->
         <div class="text-center mt-12">
-          <ButtonCTA
-            class="bg-accent hover:bg-accent/90 text-primary"
-            @click="navigateTo(localePath({name: 'services'}))"
-          >
+          <ButtonCTA class="bg-accent hover:bg-accent/90 text-primary"
+            @click="navigateTo(localePath({ name: 'services' }))">
             {{ $t('home.services.cta') }}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5 ml-2 inline-block"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 inline-block" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </ButtonCTA>
         </div>
       </div>
     </section>
+    
+
 
     <!-- Section Pourquoi MODELI -->
     <section class="spacing-section bg-neutral">
       <div class="container-modeli">
-        <SectionTitle
-          :title="$t('home.why.title')"
-          :subtitle="$t('home.why.subtitle')"
-        />
+        <SectionTitle :title="$t('home.why.title')" :subtitle="$t('home.why.subtitle')" />
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div
-            v-for="(reason, index) in whyModeli"
-            :key="reason.titleKey"
-            v-motion
-            :initial="{ opacity: 0, y: 50 }"
-            :enter="{ 
-              opacity: 1, 
-              y: 0, 
-              transition: { 
-                duration: 600, 
+          <div v-for="(reason, index) in whyModeli" :key="reason.titleKey" v-motion :initial="{ opacity: 0, y: 50 }"
+            :enter="{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 600,
                 delay: index * 150,
-                ease: 'easeOut' 
-              } 
-            }"
-            class="card-modeli hover-lift p-8 text-center"
-          >
+                ease: 'easeOut'
+              }
+            }" class="card-modeli hover-lift p-8 text-center">
             <!-- Icône -->
             <div class="flex justify-center mb-6">
-              <div
-                class="w-20 h-20 rounded-full bg-accent/10 flex items-center justify-center"
-              >
-                <component
-                  :is="reason.icon"
-                  class="w-10 h-10 text-accent"
-                />
+              <div class="w-20 h-20 rounded-full bg-accent/10 flex items-center justify-center">
+                <component :is="reason.icon" class="w-10 h-10 text-accent" />
               </div>
             </div>
 
@@ -166,10 +108,7 @@
     <!-- Section Blog/Actualités -->
     <section class="spacing-section bg-white">
       <div class="container-modeli">
-        <SectionTitle
-          :title="$t('home.blog.title')"
-          :subtitle="$t('home.blog.subtitle')"
-        />
+        <SectionTitle :title="$t('home.blog.title')" :subtitle="$t('home.blog.subtitle')" />
 
         <!-- Loader pour le blog -->
         <div v-if="blogStore.loading" class="flex justify-center py-12">
@@ -177,31 +116,19 @@
         </div>
 
         <!-- Grille des articles -->
-        <div
-          v-else-if="recentPosts.length > 0"
-          class="grid grid-cols-1 md:grid-cols-3 gap-8"
-        >
-          <CardBlog
-            v-for="post in recentPosts"
-            :key="post.id"
-            :title="post.title.rendered"
+        <div v-else-if="recentPosts.length > 0" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <CardBlog v-for="post in recentPosts" :key="post.id" :title="post.title.rendered"
             :excerpt="post.excerpt.rendered"
-            :image="post._embedded?.['wp:featuredmedia']?.[0]?.source_url || '/placeholder.jpg'"
-            :date="post.date"
-            :category="post._embedded?.['wp:term']?.[0]?.[0]?.name"
-            :read-time="post.acf?.read_time"
+            :image="post._embedded?.['wp:featuredmedia']?.[0]?.source_url || '/placeholder.jpg'" :date="post.date"
+            :category="post._embedded?.['wp:term']?.[0]?.[0]?.name" :read-time="post.acf?.read_time"
             :author="post._embedded?.author?.[0]?.name"
             :author-avatar="post._embedded?.author?.[0]?.avatar_urls?.['96']"
-            @click="navigateTo(localePath({name: 'blog-slug', params: { slug: post.slug }}))"
-          />
+            @click="navigateTo(localePath({ name: 'blog-slug', params: { slug: post.slug } }))" />
         </div>
 
         <!-- Bouton Voir tous les articles -->
         <div class="text-center mt-12">
-          <ButtonCTA
-            class="btn-outline"
-            @click="navigateTo(localePath({name: 'blog'}))"
-          >
+          <ButtonCTA class="btn-outline" @click="navigateTo(localePath({ name: 'blog' }))">
             {{ $t('home.blog.viewAll') }}
           </ButtonCTA>
         </div>
@@ -212,54 +139,29 @@
     <section class="relative py-20 bg-gradient-to-br from-primary via-primary/95 to-secondary overflow-hidden">
       <!-- Image de fond avec overlay -->
       <div class="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&h=1080&fit=crop"
-          alt="Contact"
-          class="w-full h-full object-cover opacity-20"
-        />
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&h=1080&fit=crop" alt="Contact"
+          class="w-full h-full object-cover opacity-20" />
       </div>
 
       <!-- Contenu -->
       <div class="relative container-modeli text-center">
-        <h2
-          v-motion
-          :initial="{ opacity: 0, y: 30 }"
-          :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-          class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6"
-        >
+        <h2 v-motion :initial="{ opacity: 0, y: 30 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
+          class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6">
           {{ $t('home.cta.title') }}
         </h2>
-        <p
-          v-motion
-          :initial="{ opacity: 0, y: 20 }"
+        <p v-motion :initial="{ opacity: 0, y: 20 }"
           :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 200 } }"
-          class="text-lg md:text-xl text-white/90 mb-10 max-w-3xl mx-auto"
-        >
+          class="text-lg md:text-xl text-white/90 mb-10 max-w-3xl mx-auto">
           {{ $t('home.cta.subtitle') }}
         </p>
-        <div
-          v-motion
-          :initial="{ opacity: 0, scale: 0.8 }"
-          :enter="{ opacity: 1, scale: 1, transition: { duration: 600, delay: 400 } }"
-        >
-          <ButtonCTA
-            class="bg-accent hover:bg-accent/90 text-primary text-lg px-10 py-4"
-            @click="navigateTo(localePath({name: 'contact'}))"
-          >
+        <div v-motion :initial="{ opacity: 0, scale: 0.8 }"
+          :enter="{ opacity: 1, scale: 1, transition: { duration: 600, delay: 400 } }">
+          <ButtonCTA class="bg-accent hover:bg-accent/90 text-primary text-lg px-10 py-4"
+            @click="navigateTo(localePath({ name: 'contact' }))">
             {{ $t('home.cta.button') }}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 ml-2 inline-block"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2 inline-block" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </ButtonCTA>
         </div>
