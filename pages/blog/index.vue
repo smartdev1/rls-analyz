@@ -3,20 +3,13 @@
     <!-- Header de la page -->
     <section class="bg-gradient-to-br from-primary to-secondary py-16">
       <div class="container-modeli text-center">
-        <h1
-          v-motion
-          :initial="{ opacity: 0, y: 30 }"
-          :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-          class="text-4xl md:text-5xl font-heading font-bold text-white mb-4"
-        >
+        <h1 v-motion :initial="{ opacity: 0, y: 30 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
+          class="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
           {{ $t('blog.title') }}
         </h1>
-        <p
-          v-motion
-          :initial="{ opacity: 0, y: 20 }"
+        <p v-motion :initial="{ opacity: 0, y: 20 }"
           :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 200 } }"
-          class="text-lg md:text-xl text-white/90 max-w-3xl mx-auto"
-        >
+          class="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
           {{ $t('blog.subtitle') }}
         </p>
       </div>
@@ -29,45 +22,18 @@
           <!-- Articles principaux -->
           <main class="flex-1">
             <!-- Articles à la une -->
-            <div v-if="blogStore.featuredPosts.length > 0" class="mb-12">
-              <h2 class="text-2xl font-heading font-bold text-primary mb-6">
-                {{ $t('blog.featured.title') }}
-              </h2>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <CardBlog
-                  v-for="post in blogStore.featuredPosts"
-                  :key="post.id"
-                  :title="post.title.rendered"
-                  :excerpt="post.excerpt.rendered"
-                  :image="post._embedded?.['wp:featuredmedia']?.[0]?.source_url || '/placeholder.jpg'"
-                  :date="post.date"
-                  :category="post._embedded?.['wp:term']?.[0]?.[0]?.name"
-                  :read-time="post.acf?.read_time"
-                  :author="post._embedded?.author?.[0]?.name"
-                  :author-avatar="post._embedded?.author?.[0]?.avatar_urls?.['96']"
-                  @click="navigateTo(localePath({name: 'blog-slug', params: { slug: post.slug }}))"
-                />
-              </div>
-            </div>
 
             <!-- Barre de recherche et filtres -->
             <div class="flex flex-col sm:flex-row gap-4 mb-8">
               <!-- Recherche -->
               <div class="flex-1">
-                <InputField
-                  v-model="searchQuery"
-                  type="text"
-                  :placeholder="$t('blog.search.placeholder')"
-                  @update:model-value="handleSearch"
-                />
+                <InputField v-model="searchQuery" type="text" :placeholder="$t('blog.search.placeholder')"
+                  @update:model-value="handleSearch" />
               </div>
 
               <!-- Tri -->
-              <select
-                v-model="sortBy"
-                @change="handleSort"
-                class="px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-accent focus:ring-2 focus:ring-accent/50 transition-all"
-              >
+              <select v-model="sortBy" @change="handleSort"
+                class="px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-accent focus:ring-2 focus:ring-accent/50 transition-all">
                 <option value="recent">{{ $t('blog.sort.recent') }}</option>
                 <option value="oldest">{{ $t('blog.sort.oldest') }}</option>
                 <option value="popular">{{ $t('blog.sort.popular') }}</option>
@@ -82,19 +48,10 @@
             <!-- Erreur -->
             <div v-else-if="blogStore.error" class="text-center py-20">
               <div class="card-modeli p-8 max-w-md mx-auto">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-16 w-16 text-red-500 mx-auto mb-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-red-500 mx-auto mb-4" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <p class="text-red-600 font-semibold mb-2">{{ blogStore.error }}</p>
                 <button @click="reloadPosts" class="btn-primary mt-4">
@@ -106,19 +63,9 @@
             <!-- Aucun résultat -->
             <div v-else-if="displayedPosts.length === 0" class="text-center py-20">
               <div class="card-modeli p-8 max-w-md mx-auto">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-16 w-16 text-gray-400 mx-auto mb-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-gray-400 mx-auto mb-4" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
                 <p class="text-gray-600 mb-4">{{ $t('blog.noResults') }}</p>
                 <button @click="resetSearch" class="btn-outline">
@@ -128,47 +75,53 @@
             </div>
 
             <!-- Grille des articles -->
-            <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <CardBlog
-                v-for="post in displayedPosts"
-                :key="post.id"
-                :title="post.title.rendered"
+            <div v-else class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <CardBlog v-for="post in displayedPosts" :key="post.id" :title="post.title.rendered"
                 :excerpt="post.excerpt.rendered"
-                :image="post._embedded?.['wp:featuredmedia']?.[0]?.source_url || '/placeholder.jpg'"
-                :date="post.date"
-                :category="post._embedded?.['wp:term']?.[0]?.[0]?.name"
-                :read-time="post.acf?.read_time"
+                :image="post._embedded?.['wp:featuredmedia']?.[0]?.source_url || '/placeholder.jpg'" :date="post.date"
+                :category="post._embedded?.['wp:term']?.[0]?.[0]?.name" :read-time="post.acf?.read_time"
                 :author="post._embedded?.author?.[0]?.name"
                 :author-avatar="post._embedded?.author?.[0]?.avatar_urls?.['96']"
-                @click="navigateTo(localePath({name: 'blog-slug', params: { slug: post.slug }}))"
-              />
+                @click="navigateTo(localePath({ name: 'blog-slug', params: { slug: post.slug } }))" />
             </div>
 
             <!-- Pagination -->
             <div v-if="blogStore.totalPages > 1" class="flex justify-center mt-12">
               <div class="flex items-center gap-2">
-                <button
-                  @click="loadPage(blogStore.currentPage - 1)"
-                  :disabled="blogStore.currentPage === 1"
-                  class="px-4 py-2 rounded-lg bg-white border-2 border-gray-200 hover:border-accent transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-                >
+                <button @click="loadPage(blogStore.currentPage - 1)" :disabled="blogStore.currentPage === 1"
+                  class="px-4 py-2 rounded-lg bg-white border-2 border-gray-200 hover:border-accent transition-all disabled:opacity-50 disabled:cursor-not-allowed">
                   {{ $t('blog.pagination.previous') }}
                 </button>
-                
+
                 <span class="px-4 py-2 text-sm text-gray-600">
-                  {{ $t('blog.pagination.page', { 
-                    current: blogStore.currentPage, 
-                    total: blogStore.totalPages 
+                  {{ $t('blog.pagination.page', {
+                    current: blogStore.currentPage,
+                    total: blogStore.totalPages
                   }) }}
                 </span>
-                
-                <button
-                  @click="loadPage(blogStore.currentPage + 1)"
+
+                <button @click="loadPage(blogStore.currentPage + 1)"
                   :disabled="blogStore.currentPage === blogStore.totalPages"
-                  class="px-4 py-2 rounded-lg bg-white border-2 border-gray-200 hover:border-accent transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-                >
+                  class="px-4 py-2 rounded-lg bg-white border-2 border-gray-200 hover:border-accent transition-all disabled:opacity-50 disabled:cursor-not-allowed">
                   {{ $t('blog.pagination.next') }}
                 </button>
+              </div>
+            </div>
+
+            <!-- Articles en vedette -->
+            <br/>
+            <div v-if="blogStore.featuredPosts.length > 0" class="mb-12">
+              <h2 class="text-2xl font-heading font-bold text-primary mb-6">
+                {{ $t('blog.featured.title') }}
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <CardBlog v-for="post in blogStore.featuredPosts" :key="post.id" :title="post.title.rendered"
+                  :excerpt="post.excerpt.rendered"
+                  :image="post._embedded?.['wp:featuredmedia']?.[0]?.source_url || '/placeholder.jpg'" :date="post.date"
+                  :category="post._embedded?.['wp:term']?.[0]?.[0]?.name" :read-time="post.acf?.read_time"
+                  :author="post._embedded?.author?.[0]?.name"
+                  :author-avatar="post._embedded?.author?.[0]?.avatar_urls?.['96']"
+                  @click="navigateTo(localePath({ name: 'blog-slug', params: { slug: post.slug } }))" />
               </div>
             </div>
           </main>
@@ -176,12 +129,8 @@
           <!-- Sidebar -->
           <aside class="lg:w-80 flex-shrink-0 space-y-6">
             <!-- Catégories -->
-            <div
-              v-motion
-              :initial="{ opacity: 0, x: 50 }"
-              :enter="{ opacity: 1, x: 0, transition: { duration: 600 } }"
-              class="card-modeli p-6 sticky top-24"
-            >
+            <div v-motion :initial="{ opacity: 0, x: 50 }" :enter="{ opacity: 1, x: 0, transition: { duration: 600 } }"
+              class="card-modeli p-6 sticky top-24">
               <h3 class="text-xl font-heading font-bold text-primary mb-4">
                 {{ $t('blog.categories.title') }}
               </h3>
@@ -194,32 +143,23 @@
               <!-- Liste des catégories -->
               <ul v-else class="space-y-3">
                 <li>
-                  <button
-                    @click="selectCategory(undefined)"
-                    :class="[
-                      'w-full text-left px-4 py-2 rounded-lg transition-all',
-                      !selectedCategory
-                        ? 'bg-accent text-primary font-semibold'
-                        : 'hover:bg-neutral text-gray-700'
-                    ]"
-                  >
+                  <button @click="selectCategory(undefined)" :class="[
+                    'w-full text-left px-4 py-2 rounded-lg transition-all',
+                    !selectedCategory
+                      ? 'bg-accent text-primary font-semibold'
+                      : 'hover:bg-neutral text-gray-700'
+                  ]">
                     <span>{{ $t('blog.categories.all') }}</span>
                     <span class="float-right text-gray-400">({{ blogStore.posts.length }})</span>
                   </button>
                 </li>
-                <li
-                  v-for="category in blogStore.categories"
-                  :key="category.id"
-                >
-                  <button
-                    @click="selectCategory(category.id)"
-                    :class="[
-                      'w-full text-left px-4 py-2 rounded-lg transition-all',
-                      selectedCategory === category.id
-                        ? 'bg-accent text-primary font-semibold'
-                        : 'hover:bg-neutral text-gray-700'
-                    ]"
-                  >
+                <li v-for="category in blogStore.categories" :key="category.id">
+                  <button @click="selectCategory(category.id)" :class="[
+                    'w-full text-left px-4 py-2 rounded-lg transition-all',
+                    selectedCategory === category.id
+                      ? 'bg-accent text-primary font-semibold'
+                      : 'hover:bg-neutral text-gray-700'
+                  ]">
                     <span>{{ category.name }}</span>
                     <span class="float-right text-gray-400">({{ category.count }})</span>
                   </button>
@@ -228,25 +168,16 @@
             </div>
 
             <!-- Articles récents -->
-            <div
-              v-motion
-              :initial="{ opacity: 0, x: 50 }"
-              :enter="{ opacity: 1, x: 0, transition: { duration: 600, delay: 200 } }"
-              class="card-modeli p-6"
-            >
+            <div v-motion :initial="{ opacity: 0, x: 50 }"
+              :enter="{ opacity: 1, x: 0, transition: { duration: 600, delay: 200 } }" class="card-modeli p-6">
               <h3 class="text-xl font-heading font-bold text-primary mb-4">
                 {{ $t('blog.recent.title') }}
               </h3>
               <ul class="space-y-4">
-                <li
-                  v-for="post in blogStore.recentPosts.slice(0, 5)"
-                  :key="post.id"
-                >
-                  <NuxtLink
-                    :to="localePath({name: 'blog-slug', params: { slug: post.slug }})"
-                    class="block group"
-                  >
-                    <h4 class="font-semibold text-sm text-primary group-hover:text-accent transition-colors line-clamp-2 mb-1">
+                <li v-for="post in blogStore.recentPosts.slice(0, 5)" :key="post.id">
+                  <NuxtLink :to="localePath({ name: 'blog-slug', params: { slug: post.slug } })" class="block group">
+                    <h4
+                      class="font-semibold text-sm text-primary group-hover:text-accent transition-colors line-clamp-2 mb-1">
                       {{ post.title.rendered }}
                     </h4>
                     <time class="text-xs text-gray-500">
@@ -258,12 +189,9 @@
             </div>
 
             <!-- Newsletter -->
-            <div
-              v-motion
-              :initial="{ opacity: 0, x: 50 }"
+            <div v-motion :initial="{ opacity: 0, x: 50 }"
               :enter="{ opacity: 1, x: 0, transition: { duration: 600, delay: 400 } }"
-              class="card-modeli p-6 bg-gradient-to-br from-primary/5 to-accent/5"
-            >
+              class="card-modeli p-6 bg-gradient-to-br from-primary/5 to-accent/5">
               <h3 class="text-xl font-heading font-bold text-primary mb-3">
                 {{ $t('blog.newsletter.title') }}
               </h3>
@@ -271,12 +199,8 @@
                 {{ $t('blog.newsletter.description') }}
               </p>
               <form @submit.prevent="handleNewsletterSubmit" class="space-y-3">
-                <InputField
-                  v-model="newsletterEmail"
-                  type="email"
-                  :placeholder="$t('blog.newsletter.placeholder')"
-                  :required="true"
-                />
+                <InputField v-model="newsletterEmail" type="email" :placeholder="$t('blog.newsletter.placeholder')"
+                  :required="true" />
                 <ButtonCTA type="submit" class="w-full" :disabled="subscribing">
                   {{ subscribing ? $t('blog.newsletter.subscribing') : $t('blog.newsletter.subscribe') }}
                 </ButtonCTA>
