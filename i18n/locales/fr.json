@@ -1,15 +1,16 @@
 {
   "nav": {
     "home": "Accueil",
-    "properties": "Biens",
+    "about": "À Propos",
     "services": "Services",
     "blog": "Blog",
+    "expertise": "Expertise",
     "contact": "Contact",
     "language": "Langue"
   },
   "hero": {
-    "title": "Votre Partenaire en Immobilier d'Entreprise",
-    "subtitle": "Découvrez des biens d'exception et bénéficiez de nos services de conseil pour élever votre entreprise vers de nouveaux sommets.",
+    "title": "RLS ANALYZ – L’expertise financière et l’immobilier au service de la valeur.",
+    "subtitle": "Modélisation, valorisation et stratégie pour les acteurs du marché immobilier africain.",
     "cta": "Découvrir nos offres"
   },
   "home": {
@@ -69,84 +70,89 @@
       "button": "Contactez-nous"
     }
   },
-  "properties": {
-    "title": "Nos Biens Immobiliers",
-    "subtitle": "Découvrez notre sélection de propriétés exceptionnelles adaptées à vos besoins",
-    "loading": "Chargement des biens...",
-    "back": "Retour à la liste",
-    "priceOnRequest": "Prix sur demande",
-    "noResults": "Aucun bien ne correspond à vos critères de recherche",
-    "retry": "Réessayer",
-    "noLocation": "Localisation non précisée",
-    "filters": {
-      "title": "Filtres",
-      "reset": "Réinitialiser",
-      "search": "Recherche",
-      "searchPlaceholder": "Rechercher un bien...",
-      "type": "Type de bien",
-      "allTypes": "Tous les types",
-      "price": "Prix",
-      "minPrice": "Prix min",
-      "maxPrice": "Prix max",
-      "surface": "Surface",
-      "minSurface": "Surface min",
-      "maxSurface": "Surface max",
-      "location": "Localisation",
-      "allLocations": "Toutes les localisations",
-      "results": "{count} bien(s) trouvé(s)"
+  "about": {
+    "meta": {
+      "title": "À propos - RLS ANALYZ | Immobilier d’Entreprise en Afrique de l’Ouest",
+      "description": "RLS ANALYZ est un cabinet d’expertise en immobilier d’entreprise, combinant excellence financière, rigueur analytique et ancrage africain pour transformer la donnée en valeur stratégique."
     },
-    "sort": {
-      "label": "Trier par",
-      "recent": "Plus récents",
-      "priceAsc": "Prix croissant",
-      "priceDesc": "Prix décroissant",
-      "surfaceAsc": "Surface croissante",
-      "surfaceDesc": "Surface décroissante"
+    "hero": {
+      "title": "À propos de RLS ANALYZ",
+      "subtitle": "L’expertise financière et l’immobilier au service de la valeur"
     },
-    "pagination": {
-      "previous": "Précédent",
-      "next": "Suivant",
-      "page": "Page {current} sur {total}"
+    "identity": {
+      "title": "Notre Identité : Un Partenaire de Référence",
+      "p1": "RLS ANALYZ est un cabinet spécialisé en **immobilier d’entreprise**, fondé pour accompagner les acteurs du marché immobilier d’entreprise en Afrique de l’Ouest. Basé en Côte d’Ivoire, nous nous positionnons comme un partenaire stratégique incontournable pour les banques, investisseurs, promoteurs, foncières et institutions publiques.",
+      "p2": "Notre expertise technique, financière et stratégique de haut niveau repose sur une approche unique qui conjugue **rigueur analytique**, maîtrise des standards internationaux **(RICS & IVS)** et une compréhension approfondie du contexte local.",
+      "p3": "Cette double compétence — **internationale et locale** — nous permet d’offrir des solutions d’analyse adaptées aux exigences institutionnelles tout en tenant compte des réalités du marché ouest-africain."
     },
-    "characteristics": {
-      "title": "Caractéristiques",
-      "rooms": "Pièces",
-      "bathrooms": "Salles de bain",
-      "parking": "Parking"
-    },
-    "description": {
-      "title": "Description"
-    },
-    "features": {
-      "title": "Équipements"
-    },
-    "contact": {
-      "title": "Intéressé par ce bien ?",
-      "message": "Contactez-nous dès maintenant pour obtenir plus d'informations ou organiser une visite.",
-      "form": {
-        "name": "Nom complet",
-        "email": "Email",
-        "phone": "Téléphone",
-        "message": "Votre message",
-        "send": "Envoyer la demande",
-        "sending": "Envoi en cours...",
-        "success": "Votre demande a été envoyée avec succès !",
-        "error": "Une erreur est survenue. Veuillez réessayer.",
-        "errors": {
-          "name": "Le nom est requis",
-          "email": "L'email est requis",
-          "message": "Le message est requis"
+    "mission": {
+      "title": "Notre Mission : Transformer la Donnée en Valeur Stratégique",
+      "description": "RLS ANALYZ a pour mission de transformer la donnée immobilière en valeur stratégique. Dans un environnement où la prise de décision doit s’appuyer sur des analyses précises et documentées, nous fournissons à nos clients les outils et l’expertise nécessaires pour maximiser la performance de leurs investissements immobiliers.",
+      "pillars": {
+        "p1": {
+          "title": "Évaluer la Rentabilité",
+          "description": "Nous analysons la viabilité financière de vos projets immobiliers, identifions les leviers de valeur et mesurons les indicateurs clés de performance."
+        },
+        "p2": {
+          "title": "Optimiser les Décisions",
+          "description": "Nos modélisations financières permettent d’éclairer vos choix d’investissement, de financement et de développement grâce à des scénarios comparatifs."
+        },
+        "p3": {
+          "title": "Sécuriser les Opérations",
+          "description": "Nous appliquons les meilleures pratiques internationales pour garantir la conformité et la robustesse de vos montages financiers et opérationnels."
         }
       }
     },
-    "notFound": {
-      "title": "Bien introuvable",
-      "message": "Le bien que vous recherchez n'existe pas ou n'est plus disponible.",
-      "backToList": "Retour à la liste"
+    "values": {
+      "title": "Notre Valeur Ajoutée : Quatre Piliers d’Excellence",
+      "subtitle": "RLS ANALYZ se distingue par une approche à la fois technique, stratégique et digitale. Notre positionnement repose sur quatre piliers fondamentaux qui garantissent la qualité et la pertinence de nos analyses.",
+      "financial": {
+        "title": "Expertise Financière",
+        "description": "Maîtrise des outils de modélisation et des méthodes de valorisation reconnues internationalement."
+      },
+      "regulatory": {
+        "title": "Approche Réglementaire",
+        "description": "Intégration du cadre OHADA et du Code ivoirien de la Construction et de l’Habitat dans nos analyses."
+      },
+      "innovation": {
+        "title": "Innovation Technologique",
+        "description": "Développement d’outils internes comme l’add-in MODELI pour automatiser la modélisation d’actifs immobiliers."
+      },
+      "african": {
+        "title": "Ancrage Africain",
+        "description": "Connaissance approfondie des réalités foncières, fiscales et institutionnelles de la région UMOA."
+      }
     },
-    "meta": {
-      "title": "Biens Immobiliers | Notre Sélection de Propriétés",
-      "description": "Explorez notre catalogue de biens immobiliers. Appartements, maisons, villas - trouvez la propriété qui correspond à vos rêves."
+    "vision": {
+      "title": "Notre Vision : Référence Régionale",
+      "quote": "RLS ANALYZ aspire à devenir la référence de la modélisation et de l’évaluation immobilière institutionnelle en Afrique de l’Ouest.",
+      "description": "Nous accompagnons activement la transformation du marché immobilier régional vers plus de transparence, professionnalisme et bancabilité.",
+      "pillars": {
+        "transparency": {
+          "title": "Transparence",
+          "description": "Standardisation des pratiques d’évaluation et de reporting selon les normes internationales."
+        },
+        "professionalism": {
+          "title": "Professionnalisme",
+          "description": "Élévation des standards d’analyse et de modélisation sur le marché régional."
+        },
+        "bankability": {
+          "title": "Bancabilité",
+          "description": "Structuration de projets répondant aux exigences des investisseurs institutionnels."
+        }
+      }
+    },
+    "stats": {
+      "title": "Pourquoi Choisir RLS ANALYZ ?",
+      "description": "Dans un marché immobilier en pleine transformation, RLS ANALYZ est le partenaire idéal pour sécuriser vos investissements et optimiser vos performances.",
+      "years": "Années d’Expertise",
+      "projects": "Projets Analysés",
+      "compliance": "Conformité"
+    },
+    "cta": {
+      "title": "Prêt à Transformer vos Projets Immobiliers ?",
+      "subtitle": "Investisseurs, promoteurs, institutions publiques ou banques, bénéficiez de notre expertise pour l’analyse et l’évaluation de vos projets immobiliers.",
+      "button": "Contactez-nous"
     }
   },
   "contact": {
@@ -230,6 +236,9 @@
     },
     "map": {
       "placeholder": "Carte à intégrer (Google Maps / Leaflet)"
+    },
+    "schedule":{
+      "title": "Prendre rendez vous"
     }
   },
   "services": {

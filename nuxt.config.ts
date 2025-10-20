@@ -16,8 +16,8 @@ export default defineNuxtConfig({
   // Configuration des fonts
   fonts: {
     families: [
-      { name: 'Poppins', provider: 'google', weights: [400, 600, 700, 800] },
-      { name: 'Open Sans', provider: 'google', weights: [300, 400, 600, 700] }
+      { name: 'Montserrat', provider: 'google', weights: [400, 600, 700, 800] },
+      { name: 'Lato', provider: 'google', weights: [300, 400, 600, 700] }
     ]
   },
 
@@ -112,7 +112,7 @@ export default defineNuxtConfig({
   // Variables d'environnement
   runtimeConfig: {
     public: {
-      apiUrl: process.env.NUXT_PUBLIC_API_URL || 'http://localhost/rls-analyz',
+      apiUrl: process.env.NUXT_PUBLIC_API_URL || 'https://api.modeli.fr',
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://modeli.fr',
     }
   },

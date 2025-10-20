@@ -157,6 +157,20 @@
 
                     <!-- Informations de contact -->
                     <div class="lg:col-span-1 space-y-6">
+                        <!-- Calendar -->
+                        <div v-motion :initial="{ opacity: 0, x: 50 }"
+                            :enter="{ opacity: 1, x: 0, transition: { duration: 600, delay: 200 } }"
+                            class="card-modeli p-6">
+                            <h3 class="text-xl font-heading font-bold text-primary mb-6">
+                                Prenez rendez-vous
+                            </h3>
+
+                            <!-- Calendly inline widget -->
+                            <iframe
+                                src="https://calendly.com/kacouesdras/rendez-vous"
+                                width="100%" height="600" frameborder="0" class="rounded-lg shadow-md"></iframe>
+                        </div>
+
                         <!-- Coordonnées -->
                         <div v-motion :initial="{ opacity: 0, x: 50 }"
                             :enter="{ opacity: 1, x: 0, transition: { duration: 600, delay: 200 } }"
@@ -279,7 +293,8 @@
                                             d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
                                     </svg>
                                 </a>
-                                <a href="https://linkedin.com/company/rls-analy" target="_blank" rel="noopener noreferrer"
+                                <a href="https://linkedin.com/company/rls-analy" target="_blank"
+                                    rel="noopener noreferrer"
                                     class="w-12 h-12 bg-accent/10 hover:bg-accent rounded-full flex items-center justify-center transition-all duration-300 group"
                                     aria-label="LinkedIn">
                                     <svg class="w-6 h-6 text-accent group-hover:text-primary transition-colors"
@@ -336,6 +351,7 @@ const uiStore = useUIStore()
 // i18n
 const { t } = useI18n()
 const localePath = useLocalePath()
+const calendlyUrl = "https://calendly.com/kacouesdras/rendez-vous"
 
 // SEO
 useHead({
@@ -430,6 +446,14 @@ const validateForm = () => {
     return isValid
 }
 
+const openCalendly = () => {
+    if (window.Calendly) {
+        window.Calendly.initPopupWidget({
+            url: 'https://calendly.com/ton-compte/rdv'
+        })
+    }
+}
+
 // Soumission du formulaire
 const handleSubmit = async () => {
     if (!validateForm()) {
@@ -480,7 +504,7 @@ const resetForm = () => {
     form.message = ''
     form.rgpdConsent = false
 
-     Object.keys(errors).forEach(key => {
+    Object.keys(errors).forEach(key => {
         errors[key as keyof typeof errors] = ''
     })
 }

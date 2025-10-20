@@ -1,9 +1,10 @@
 {
     "nav": {
         "home": "Home",
-        "properties": "Properties",
+        "about": "About",
         "services": "Services",
         "blog": "Blog",
+        "expertise": "Expertise",
         "contact": "Contact",
         "language": "Language"
     },
@@ -69,84 +70,89 @@
             "button": "Contact Us"
         }
     },
-    "properties": {
-        "title": "Our Properties",
-        "subtitle": "Discover our selection of exceptional properties tailored to your needs",
-        "loading": "Loading properties...",
-        "back": "Back to list",
-        "priceOnRequest": "Price on request",
-        "noResults": "No properties match your search criteria",
-        "retry": "Try again",
-        "noLocation": "Location not specified",
-        "filters": {
-            "title": "Filters",
-            "reset": "Reset",
-            "search": "Search",
-            "searchPlaceholder": "Search for a property...",
-            "type": "Property type",
-            "allTypes": "All types",
-            "price": "Price",
-            "minPrice": "Min price",
-            "maxPrice": "Max price",
-            "surface": "Surface area",
-            "minSurface": "Min surface",
-            "maxSurface": "Max surface",
-            "location": "Location",
-            "allLocations": "All locations",
-            "results": "{count} property(ies) found"
+    "about": {
+        "meta": {
+            "title": "About Us - RLS ANALYZ | Corporate Real Estate in West Africa",
+            "description": "RLS ANALYZ is a corporate real estate advisory firm combining financial excellence, analytical rigor, and African expertise to turn data into strategic value."
         },
-        "sort": {
-            "label": "Sort by",
-            "recent": "Most recent",
-            "priceAsc": "Price: low to high",
-            "priceDesc": "Price: high to low",
-            "surfaceAsc": "Surface: low to high",
-            "surfaceDesc": "Surface: high to low"
+        "hero": {
+            "title": "About RLS ANALYZ",
+            "subtitle": "Financial expertise and real estate serving real value"
         },
-        "pagination": {
-            "previous": "Previous",
-            "next": "Next",
-            "page": "Page {current} of {total}"
+        "identity": {
+            "title": "Our Identity: A Trusted Partner",
+            "p1": "RLS ANALYZ is a firm specialized in **corporate real estate**, founded to support market players across West Africa. Based in Côte d’Ivoire, we position ourselves as a strategic partner for banks, investors, developers, real estate companies, and public institutions.",
+            "p2": "Our technical, financial, and strategic expertise relies on a unique approach combining **analytical rigor**, mastery of international standards **(RICS & IVS)**, and an in-depth understanding of the local context.",
+            "p3": "This dual competence — **international and local** — allows us to deliver tailored analyses that meet institutional requirements while addressing the operational realities of the West African real estate market."
         },
-        "characteristics": {
-            "title": "Characteristics",
-            "rooms": "Rooms",
-            "bathrooms": "Bathrooms",
-            "parking": "Parking"
-        },
-        "description": {
-            "title": "Description"
-        },
-        "features": {
-            "title": "Features"
-        },
-        "contact": {
-            "title": "Interested in this property?",
-            "message": "Contact us now for more information or to arrange a viewing.",
-            "form": {
-                "name": "Full name",
-                "email": "Email",
-                "phone": "Phone",
-                "message": "Your message",
-                "send": "Send request",
-                "sending": "Sending...",
-                "success": "Your request has been sent successfully!",
-                "error": "An error occurred. Please try again.",
-                "errors": {
-                    "name": "Name is required",
-                    "email": "Email is required",
-                    "message": "Message is required"
+        "mission": {
+            "title": "Our Mission: Turning Data into Strategic Value",
+            "description": "RLS ANALYZ’s mission is to transform real estate data into strategic value. In an environment where decisions must rely on accurate and documented analysis, we provide clients with the tools and expertise to maximize the performance of their investments.",
+            "pillars": {
+                "p1": {
+                    "title": "Assess Profitability",
+                    "description": "We thoroughly analyze the financial viability of your real estate projects, identifying key performance indicators and value-creation levers."
+                },
+                "p2": {
+                    "title": "Optimize Decisions",
+                    "description": "Our financial models help guide your investment, financing, and development choices with comparative scenarios and sensitivity analyses."
+                },
+                "p3": {
+                    "title": "Secure Operations",
+                    "description": "We apply international best practices to ensure the compliance and robustness of your financial and operational structures."
                 }
             }
         },
-        "notFound": {
-            "title": "Property not found",
-            "message": "The property you are looking for does not exist or is no longer available.",
-            "backToList": "Back to list"
+        "values": {
+            "title": "Our Added Value: Four Pillars of Excellence",
+            "subtitle": "RLS ANALYZ stands out through a technical, strategic, and digital approach. Our unique positioning in the West African market is built on four fundamental pillars ensuring the quality and relevance of our analyses.",
+            "financial": {
+                "title": "Financial Expertise",
+                "description": "Mastery of modeling tools and internationally recognized valuation methods."
+            },
+            "regulatory": {
+                "title": "Regulatory Approach",
+                "description": "Integration of the OHADA legal framework and the Ivorian Construction and Housing Code into our analyses."
+            },
+            "innovation": {
+                "title": "Technological Innovation",
+                "description": "Development of in-house tools like the MODELI add-in, an Excel module for automated asset modeling."
+            },
+            "african": {
+                "title": "African Footprint",
+                "description": "Deep knowledge of the land, fiscal, and institutional realities across the UMOA region."
+            }
         },
-        "meta": {
-            "title": "Properties | Our Property Selection",
-            "description": "Explore our real estate catalog. Apartments, houses, villas - find the property that matches your dreams."
+        "vision": {
+            "title": "Our Vision: Regional Leadership",
+            "quote": "RLS ANALYZ aims to become the leading reference in institutional real estate modeling and valuation in West Africa.",
+            "description": "We actively contribute to transforming the regional real estate market toward greater transparency, professionalism, and bankability.",
+            "pillars": {
+                "transparency": {
+                    "title": "Transparency",
+                    "description": "Standardizing valuation and reporting practices according to international norms."
+                },
+                "professionalism": {
+                    "title": "Professionalism",
+                    "description": "Raising analytical and modeling standards across the regional market."
+                },
+                "bankability": {
+                    "title": "Bankability",
+                    "description": "Structuring projects that meet institutional investors’ requirements."
+                }
+            }
+        },
+        "stats": {
+            "title": "Why Choose RLS ANALYZ?",
+            "description": "In a transforming real estate market, RLS ANALYZ is the ideal partner to secure your investments and optimize your asset performance.",
+            "years": "Years of Expertise",
+            "projects": "Projects Analyzed",
+            "compliance": "Compliance Rate"
+        },
+        "cta": {
+            "title": "Ready to Transform Your Real Estate Projects?",
+            "subtitle": "Whether you’re an institutional investor, developer, public institution, or bank, RLS ANALYZ supports you with expert analysis and evaluation tailored to your needs.",
+            "button": "Contact Us"
         }
     },
     "contact": {
@@ -230,6 +236,9 @@
         },
         "map": {
             "placeholder": "Map to be integrated (Google Maps / Leaflet)"
+        },
+        "schedule":{
+            "title": "Schedule an Appointment"
         }
     },
     "services": {

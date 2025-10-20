@@ -2,12 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Variables CSS personnalisées MODELI */
+/* Import des polices Google Fonts - RLS ANALYZ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Lato:wght@300;400;600;700&display=swap');
+
+/* Variables CSS personnalisées RLS ANALYZ */
 :root {
-  --color-primary: #0A3D62;
-  --color-secondary: #3C6382;
-  --color-accent: #F8C291;
-  --color-neutral: #F5F6FA;
+  --color-primary: #002B5B;
+  --color-secondary: #003D82;
+  --color-accent: #C6A15B;
+  --color-neutral: #F2F2F2;
   --color-text: #2D3436;
   --color-white: #FFFFFF;
   --transition-smooth: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);

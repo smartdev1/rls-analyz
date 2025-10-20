@@ -237,11 +237,12 @@ const langStore = useLangStore()
 const { locale } = useI18n()
 const localePath = useLocalePath()
 
-// Navigation links avec clés i18n
+// Navigation links avec clés i18n - PROPOSITION 2
 const navLinks = [
   { label: "nav.home", path: "/" },
-  { label: "nav.properties", path: "/biens" },
+  { label: "nav.about", path: "/a-propos" },
   { label: "nav.services", path: "/services" },
+  { label: "nav.expertise", path: "/expertise" },
   { label: "nav.blog", path: "/blog" },
   { label: "nav.contact", path: "/contact" }
 ]
