@@ -91,7 +91,7 @@
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
-              contact@rls-analyz.fr
+              contact@rls-analyz.com
             </a>
           </div>
         </div>
@@ -110,10 +110,10 @@
             </li>
             <li>
               <NuxtLink
-                to="/biens"
+                to="/a-propos"
                 class="text-white/70 hover:text-accent transition-colors inline-flex items-center group"
               >
-                <span class="group-hover:translate-x-1 transition-transform">Biens</span>
+                <span class="group-hover:translate-x-1 transition-transform">À propos</span>
               </NuxtLink>
             </li>
             <li>
@@ -122,6 +122,14 @@
                 class="text-white/70 hover:text-accent transition-colors inline-flex items-center group"
               >
                 <span class="group-hover:translate-x-1 transition-transform">Services</span>
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink
+                to="/expertise"
+                class="text-white/70 hover:text-accent transition-colors inline-flex items-center group"
+              >
+                <span class="group-hover:translate-x-1 transition-transform">Expertise</span>
               </NuxtLink>
             </li>
             <li>

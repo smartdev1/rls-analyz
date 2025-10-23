@@ -300,7 +300,7 @@
             role="Managing Partner"
             bio="Avec plus de 7 ans d'expérience en modélisation financière immobilière, Aristide est le cerveau derrière MODELI et un expert reconnu en immobilier d'entreprise en Afrique de l'Ouest."
             linkedin="https://www.linkedin.com/in/aristide-adouko/"
-            image="/team/aristide-adouko.jpg"
+            image="https://zupimages.net/up/25/43/4nsq.jpg"
           />
           
           <OurTeam
