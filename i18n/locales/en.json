@@ -59,6 +59,39 @@
                 "description": "95% satisfaction rate across 10+ projects."
             }
         },
+        "mission": {
+            "title": "Our Mission",
+            "subtitle": "Turning data into strategic value",
+            "heading": "We make real estate data speak",
+            "text1": "RLS ANALYZ’s mission is to transform real estate data into strategic value. In a context where decisions rely on precise analytics, we provide clients with the tools they need to maximize the performance of their investments.",
+            "text2": "We analyze profitability, secure transactions, and optimize decision-making through a methodology based on financial modeling and rigorous analysis.",
+            "text3": "Each project is guided by a proven approach, adapted to the African market while meeting international standards."
+        },
+        "expertise": {
+            "title": "Our Areas of Expertise",
+            "items": {
+                "valuation": {
+                    "title": "Valuation & Appraisal",
+                    "description": "Determination of asset fair value according to RICS and IVS standards."
+                },
+                "feasibility": {
+                    "title": "Feasibility Studies",
+                    "description": "Comprehensive technical, financial, and regulatory analyses to validate project viability."
+                },
+                "portfolio": {
+                    "title": "Portfolio Review & Reporting",
+                    "description": "Performance tracking through dynamic dashboards and financial reporting tools."
+                },
+                "development": {
+                    "title": "Project Modeling & Monitoring",
+                    "description": "Rigorous financial monitoring of project flows, costs, and partnerships."
+                },
+                "norms": {
+                    "title": "Local / International Standards Conversion",
+                    "description": "Accounting compliance and value adaptation in accordance with international standards."
+                }
+            }
+        },
         "blog": {
             "title": "News & Insights",
             "subtitle": "Stay informed about the latest trends in commercial real estate.",
@@ -237,101 +270,72 @@
         "map": {
             "placeholder": "Map to be integrated (Google Maps / Leaflet)"
         },
-        "schedule":{
+        "schedule": {
             "title": "Schedule an Appointment"
         }
     },
     "services": {
         "meta": {
-            "title": "Our Services | MODELI",
-            "description": "Discover our expertise in commercial real estate: market research, sector analysis and investment advisory."
+            "title": "Our Services | RLS ANALYZ - Real Estate & Financial Expertise",
+            "description": "Discover RLS-ANALYZ services: property valuation, feasibility studies, financial modeling, project monitoring, and IFRS compliance. Excellence and precision to support your strategic decisions."
         },
         "hero": {
             "title": "Our Services of Excellence",
-            "subtitle": "Tailored support to transform your real estate projects into guaranteed success."
+            "subtitle": "Tailor-made real estate and financial solutions built on rigor, transparency, and innovation."
         },
         "main": {
             "title": "Our Expertise at Your Service",
-            "subtitle": "Comprehensive and personalized solutions to meet all your commercial real estate needs."
-        },
-        "market": {
-            "title": "Market Research",
-            "description": "Our team of experts analyzes the real estate market in depth to provide you with accurate and actionable data. We identify trends, opportunities and risks to optimize your investment strategy.",
-            "points": {
-                "market": "In-depth analysis of local and national markets",
-                "trends": "Identification of trends and forecasts",
-                "opportunities": "Detection of investment opportunities",
-                "report": "Detailed report with strategic recommendations"
-            },
-            "cta": "Request a study"
-        },
-        "analysis": {
-            "title": "Sector Analysis",
-            "description": "We evaluate the most promising business sectors and analyze local economic dynamics. Our approach allows you to target the best opportunities based on your field of activity.",
-            "points": {
-                "sector": "Detailed evaluation of business sectors",
-                "competition": "Competitive market analysis",
-                "positioning": "Strategic positioning recommendations",
-                "strategy": "Development of implementation strategy"
-            },
-            "cta": "Request an analysis"
-        },
-        "investment": {
-            "title": "Investment Advisory",
-            "description": "Personalized support to secure and maximize returns on your real estate investments. From identifying opportunities to post-acquisition monitoring, we are by your side at every step.",
-            "points": {
-                "assessment": "Assessment of profitability and risks",
-                "opportunities": "Identification of tailored opportunities",
-                "financing": "Assistance in financial structuring",
-                "monitoring": "Post-acquisition monitoring and optimization"
-            },
-            "cta": "Request advice"
+            "subtitle": "We guide you through every stage of your projects — from asset valuation to the implementation of effective and sustainable strategies."
         },
         "process": {
-            "title": "Our Process",
-            "subtitle": "A proven method to support you effectively",
+            "title": "Our Methodology",
+            "subtitle": "A structured and proven approach to guarantee reliable and relevant results.",
             "steps": {
-                "contact": {
-                    "title": "First Contact",
-                    "description": "Initial exchange to understand your specific needs and objectives."
-                },
                 "analysis": {
-                    "title": "Analysis & Study",
-                    "description": "Conducting an in-depth and personalized study of your project."
+                    "title": "Analysis & Diagnosis",
+                    "description": "Understanding your portfolio, objectives, and constraints to establish a clear and precise diagnosis."
                 },
-                "proposal": {
-                    "title": "Proposal",
-                    "description": "Presentation of our recommendations and a detailed action plan."
+                "modeling": {
+                    "title": "Valuation & Modeling",
+                    "description": "Applying recognized methods and our internal MODELI model to assess economic and financial performance."
                 },
-                "support": {
-                    "title": "Support",
-                    "description": "Continuous monitoring and assistance until your project is realized."
+                "recommendations": {
+                    "title": "Recommendations & Strategy",
+                    "description": "Developing personalized investment scenarios and recommendations to maximize profitability."
+                },
+                "monitoring": {
+                    "title": "Monitoring & Reporting",
+                    "description": "Continuous support with dashboards and clear reports to efficiently manage your real estate assets."
                 }
             }
         },
-        "testimonials": {
-            "title": "They Trust Us",
-            "subtitle": "Discover testimonials from our satisfied clients",
+        "why": {
+            "title": "Why Choose RLS-ANALYZ?",
+            "subtitle": "Recognized expertise and a unique methodology serving your ambitions.",
             "items": {
-                "first": {
-                    "text": "MODELI supported us in our establishment in Paris. Their market study allowed us to choose the best location for our business. A true trusted partner.",
-                    "position": "General Director, TechCorp"
+                "expertise": {
+                    "title": "International Expertise",
+                    "description": "Our analyses comply with international standards (RICS, IFRS, IVS) ensuring reliability and transparency."
                 },
-                "second": {
-                    "text": "The sector analysis carried out by MODELI was decisive in our expansion strategy. Their expertise and responsiveness are exceptional.",
-                    "position": "CEO, InnovateLab"
+                "agility": {
+                    "title": "Reactivity & Agility",
+                    "description": "A human-sized team and digital tools that deliver accurate results in record time."
                 },
-                "third": {
-                    "text": "Thanks to MODELI, we optimized our real estate investment. Their personalized advice and rigorous monitoring allowed us to maximize our profitability.",
-                    "position": "Financial Director, GlobalTrade"
+                "model": {
+                    "title": "MODELI Methodology",
+                    "description": "An in-house financial model developed for robust projections and tailored analyses."
+                },
+                "transparency": {
+                    "title": "Total Transparency",
+                    "description": "Every mission is documented and shared openly with our clients and partners."
                 }
             }
         },
         "cta": {
-            "title": "Ready to Bring Your Project to Life?",
-            "subtitle": "Contact our experts today for a personalized consultation and discover how we can help you.",
+            "title": "Ready to Work with Us?",
+            "subtitle": "Contact our experts today for a personalized consultation and discover how we can support your projects.",
             "contact": "Contact Us",
-            "properties": "View Our Properties"
+            "properties": "View Our Projects"
         }
     },
     "blog": {

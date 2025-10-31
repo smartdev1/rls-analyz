@@ -112,8 +112,8 @@ export default defineNuxtConfig({
   // Variables d'environnement
   runtimeConfig: {
     public: {
-      apiUrl: process.env.NUXT_PUBLIC_API_URL || 'https://api.modeli.fr',
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://modeli.fr',
+      apiUrl: process.env.NUXT_PUBLIC_API_URL || 'https://board.rls-analyz.com',
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://rls-analyz.com',
     }
   },
 

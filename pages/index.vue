@@ -6,41 +6,70 @@
       :show-arrow="true" :show-scroll-indicator="true" @cta-click="navigateTo(localePath({ name: 'biens' }))" />
 
     <!-- Section Nos Biens d'Exception -->
-    <section class="spacing-section bg-neutral">
-      <div class="container-modeli">
-        <SectionTitle :title="$t('home.properties.title')" :subtitle="$t('home.properties.subtitle')" />
+    <!-- Section Mission + Expertise -->
+<section class="spacing-section bg-neutral">
+  <div class="container-modeli">
+    <!-- Titre principal -->
+    <SectionTitle
+      :title="$t('home.mission.title')"
+      :subtitle="$t('home.mission.subtitle')"
+    />
 
-        <!-- Loader pour les biens -->
-        <div v-if="propertyStore.loading" class="flex justify-center py-12">
-          <Loader variant="circle" size="lg" />
-        </div>
+    <!-- Bloc Mission -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-12">
+      <!-- Texte -->
+      <div v-motion :initial="{ opacity: 0, x: -40 }"
+        :enter="{ opacity: 1, x: 0, transition: { duration: 600 } }">
+        <h3 class="text-2xl md:text-3xl font-heading font-bold text-primary mb-6">
+          {{ $t('home.mission.heading') }}
+        </h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          {{ $t('home.mission.text1') }}
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          {{ $t('home.mission.text2') }}
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          {{ $t('home.mission.text3') }}
+        </p>
+      </div>
 
-        <!-- Grille des biens -->
-        <div v-else-if="featuredProperties.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <CardProperty v-for="property in featuredProperties" :key="property.id" :title="property.title.rendered"
-            :image="property._embedded?.['wp:featuredmedia']?.[0]?.source_url || '/placeholder.jpg'"
-            :location="property.acf?.location || $t('home.properties.noLocation')"
-            :price="formatPrice(property.acf?.price)"
-            @click="navigateTo(localePath({ name: 'biens-slug', params: { slug: property.slug } }))" />
-        </div>
+      <!-- Image illustrative -->
+      <div v-motion :initial="{ opacity: 0, x: 40 }"
+        :enter="{ opacity: 1, x: 0, transition: { duration: 600, delay: 150 } }">
+        <img
+          src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=600&fit=crop&q=80"
+          alt="Mission RLS ANALYZ"
+          class="rounded-3xl shadow-lg"
+        />
+      </div>
+    </div>
 
-        <!-- Message si aucun bien -->
-        <div v-else class="text-center py-12">
-          <p class="text-gray-600">{{ $t('home.properties.empty') }}</p>
-        </div>
+    <!-- Bloc Expertise -->
+    <div class="mt-24">
+      <h3 class="text-3xl md:text-4xl font-heading font-bold text-primary text-center mb-12">
+        {{ $t('home.expertise.title') }}
+      </h3>
 
-        <!-- Bouton Voir tous les biens -->
-        <div class="text-center mt-12">
-          <ButtonCTA @click="navigateTo(localePath({ name: 'biens' }))">
-            {{ $t('home.properties.viewAll') }}
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 inline-block" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </ButtonCTA>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div v-for="(item, index) in expertiseList" :key="index" v-motion
+          :initial="{ opacity: 0, y: 50 }"
+          :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: index * 100 } }"
+          class="card-modeli p-8 text-center hover-lift">
+          <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-accent/10 flex items-center justify-center">
+            <component :is="item.icon" class="w-8 h-8 text-accent" />
+          </div>
+          <h4 class="text-xl font-heading font-semibold text-primary mb-3">
+            {{ $t(item.title) }}
+          </h4>
+          <p class="text-gray-600 leading-relaxed">
+            {{ $t(item.description) }}
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!-- Section Nos Services -->
     <section class="spacing-section bg-white">
@@ -236,6 +265,46 @@ const featuredProperties = computed(() => {
 const recentPosts = computed(() => {
   return blogStore.posts.slice(0, 3)
 })
+
+// Section Mission + Expertise
+const expertiseList = [
+  {
+    title: 'home.expertise.items.valuation.title',
+    description: 'home.expertise.items.valuation.description',
+    icon: h('svg', { xmlns: 'http://www.w3.org/2000/svg', fill: 'none', viewBox: '0 0 24 24', stroke: 'currentColor' }, [
+      h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M12 8v4l3 3' })
+    ])
+  },
+  {
+    title: 'home.expertise.items.feasibility.title',
+    description: 'home.expertise.items.feasibility.description',
+    icon: h('svg', { xmlns: 'http://www.w3.org/2000/svg', fill: 'none', viewBox: '0 0 24 24', stroke: 'currentColor' }, [
+      h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M9 12l2 2 4-4' })
+    ])
+  },
+  {
+    title: 'home.expertise.items.portfolio.title',
+    description: 'home.expertise.items.portfolio.description',
+    icon: h('svg', { xmlns: 'http://www.w3.org/2000/svg', fill: 'none', viewBox: '0 0 24 24', stroke: 'currentColor' }, [
+      h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M4 6h16v12H4z' })
+    ])
+  },
+  {
+    title: 'home.expertise.items.development.title',
+    description: 'home.expertise.items.development.description',
+    icon: h('svg', { xmlns: 'http://www.w3.org/2000/svg', fill: 'none', viewBox: '0 0 24 24', stroke: 'currentColor' }, [
+      h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M12 20h9' })
+    ])
+  },
+  {
+    title: 'home.expertise.items.norms.title',
+    description: 'home.expertise.items.norms.description',
+    icon: h('svg', { xmlns: 'http://www.w3.org/2000/svg', fill: 'none', viewBox: '0 0 24 24', stroke: 'currentColor' }, [
+      h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M6 18L18 6M6 6h12v12H6z' })
+    ])
+  }
+]
+
 
 // Services avec icônes
 const services = [

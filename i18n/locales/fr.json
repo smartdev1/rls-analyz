@@ -18,13 +18,38 @@
       "title": "RLS ANALYZ - Immobilier d'Entreprise | Biens Premium & Conseil",
       "description": "Découvrez notre sélection de biens immobiliers d'entreprise premium. Expertise, conseil personnalisé et accompagnement pour vos projets."
     },
-    "properties": {
-      "title": "Nos Biens d'Exception",
-      "subtitle": "Découvrez notre sélection de biens immobiliers d'entreprise dans les meilleurs emplacements.",
-      "noLocation": "Localisation non spécifiée",
-      "priceOnRequest": "Prix sur demande",
-      "empty": "Aucun bien disponible pour le moment",
-      "viewAll": "Voir tous les biens"
+    "mission": {
+      "title": "Notre Mission",
+      "subtitle": "Transformer la donnée en valeur stratégique",
+      "heading": "Nous faisons parler la donnée immobilière",
+      "text1": "RLS ANALYZ a pour mission de transformer la donnée immobilière en valeur stratégique. Dans un environnement où la décision repose sur des analyses précises, nous fournissons à nos clients les outils nécessaires pour maximiser la performance de leurs investissements.",
+      "text2": "Nous analysons la rentabilité, sécurisons les opérations et optimisons vos décisions grâce à une approche fondée sur la rigueur analytique et la modélisation financière.",
+      "text3": "Chaque mission repose sur une méthodologie éprouvée, adaptée au marché africain et alignée sur les standards internationaux."
+    },
+    "expertise": {
+      "title": "Nos Domaines d’Expertise",
+      "items": {
+        "valuation": {
+          "title": "Évaluation & Valorisation",
+          "description": "Détermination de la juste valeur des actifs selon les standards RICS et IVS."
+        },
+        "feasibility": {
+          "title": "Études de Faisabilité",
+          "description": "Analyse complète technique, financière et réglementaire pour valider la viabilité des projets."
+        },
+        "portfolio": {
+          "title": "Portfolio Review & Reporting",
+          "description": "Suivi des indicateurs de performance avec reporting dynamique et tableaux de bord."
+        },
+        "development": {
+          "title": "Modélisation & Suivi de Projet",
+          "description": "Pilotage financier rigoureux des flux, coûts et partenariats de vos projets immobiliers."
+        },
+        "norms": {
+          "title": "Conversion Normes Locales / Internationales",
+          "description": "Mise en conformité comptable et adaptation des valorisations selon les standards internationaux."
+        }
+      }
     },
     "services": {
       "title": "Nos Services",
@@ -237,101 +262,72 @@
     "map": {
       "placeholder": "Carte à intégrer (Google Maps / Leaflet)"
     },
-    "schedule":{
+    "schedule": {
       "title": "Prendre rendez vous"
     }
   },
   "services": {
     "meta": {
-      "title": "Nos Services | RLS ANALYZ",
-      "description": "Découvrez nos services d'expertise en immobilier d'entreprise : étude de marché, analyse sectorielle et conseil en investissement."
+      "title": "Nos Services | RLS ANALYZ - Expertise Immobilière et Financière",
+      "description": "Découvrez les services de RLS-ANALYZ : évaluation immobilière, études de faisabilité, modélisation financière, suivi de projets et conformité IFRS. Une expertise d'excellence au service de vos décisions."
     },
     "hero": {
       "title": "Nos Services d'Excellence",
-      "subtitle": "Un accompagnement sur-mesure pour transformer vos projets immobiliers en succès garantis."
+      "subtitle": "Des solutions immobilières et financières sur-mesure, fondées sur rigueur, transparence et innovation."
     },
     "main": {
       "title": "Notre Expertise à Votre Service",
-      "subtitle": "Des solutions complètes et personnalisées pour répondre à tous vos besoins en immobilier d'entreprise."
-    },
-    "market": {
-      "title": "Étude de Marché",
-      "description": "Notre équipe d'experts analyse en profondeur le marché immobilier pour vous fournir des données précises et actionnables. Nous identifions les tendances, les opportunités et les risques pour optimiser votre stratégie d'investissement.",
-      "points": {
-        "market": "Analyse approfondie du marché local et national",
-        "trends": "Identification des tendances et prévisions",
-        "opportunities": "Détection des opportunités d'investissement",
-        "report": "Rapport détaillé avec recommandations stratégiques"
-      },
-      "cta": "Demander une étude"
-    },
-    "analysis": {
-      "title": "Analyse Sectorielle",
-      "description": "Nous évaluons les secteurs d'activité les plus porteurs et analysons la dynamique économique locale. Notre approche vous permet de cibler les meilleures opportunités en fonction de votre domaine d'activité.",
-      "points": {
-        "sector": "Évaluation détaillée des secteurs d'activité",
-        "competition": "Analyse concurrentielle du marché",
-        "positioning": "Recommandations de positionnement stratégique",
-        "strategy": "Élaboration de stratégie d'implantation"
-      },
-      "cta": "Demander une analyse"
-    },
-    "investment": {
-      "title": "Conseil en Investissement",
-      "description": "Un accompagnement personnalisé pour sécuriser et rentabiliser vos investissements immobiliers. De l'identification des opportunités au suivi post-acquisition, nous sommes à vos côtés à chaque étape.",
-      "points": {
-        "assessment": "Évaluation de la rentabilité et des risques",
-        "opportunities": "Identification d'opportunités sur-mesure",
-        "financing": "Assistance dans le montage financier",
-        "monitoring": "Suivi et optimisation post-acquisition"
-      },
-      "cta": "Demander un conseil"
+      "subtitle": "Nous vous accompagnons dans chaque étape de vos projets : de l’évaluation de vos actifs à la mise en œuvre de stratégies performantes et durables."
     },
     "process": {
-      "title": "Notre Processus",
-      "subtitle": "Une méthode éprouvée pour vous accompagner efficacement",
+      "title": "Notre Méthodologie",
+      "subtitle": "Une approche structurée pour garantir des résultats fiables et pertinents.",
       "steps": {
-        "contact": {
-          "title": "Premier Contact",
-          "description": "Échange initial pour comprendre vos besoins et objectifs spécifiques."
-        },
         "analysis": {
-          "title": "Analyse & Étude",
-          "description": "Réalisation d'une étude approfondie et personnalisée de votre projet."
+          "title": "Analyse & Diagnostic",
+          "description": "Compréhension de votre portefeuille, de vos objectifs et de vos contraintes afin d’établir un diagnostic précis."
         },
-        "proposal": {
-          "title": "Proposition",
-          "description": "Présentation de nos recommandations et d'un plan d'action détaillé."
+        "modeling": {
+          "title": "Évaluation & Modélisation",
+          "description": "Application de méthodes reconnues et de notre modèle MODELI pour mesurer la performance économique et financière."
         },
-        "support": {
-          "title": "Accompagnement",
-          "description": "Suivi continu et assistance jusqu'à la concrétisation de votre projet."
+        "recommendations": {
+          "title": "Recommandations & Stratégie",
+          "description": "Élaboration de scénarios d’investissement et de recommandations sur-mesure pour maximiser la rentabilité."
+        },
+        "monitoring": {
+          "title": "Suivi & Reporting",
+          "description": "Accompagnement continu avec tableaux de bord et rapports clairs pour piloter efficacement vos actifs."
         }
       }
     },
-    "testimonials": {
-      "title": "Ils Nous Font Confiance",
-      "subtitle": "Découvrez les témoignages de nos clients satisfaits",
+    "why": {
+      "title": "Pourquoi Choisir RLS-ANALYZ ?",
+      "subtitle": "Une expertise reconnue et une méthodologie unique au service de vos ambitions.",
       "items": {
-        "first": {
-          "text": "RLS ANALYZ nous a accompagnés dans notre implantation à Paris. Leur étude de marché nous a permis de choisir le meilleur emplacement pour notre activité. Un vrai partenaire de confiance.",
-          "position": "Directrice Générale, TechCorp"
+        "expertise": {
+          "title": "Expertise Internationale",
+          "description": "Nos analyses sont conformes aux standards RICS, IFRS et IVS, gages de fiabilité et de transparence."
         },
-        "second": {
-          "text": "L'analyse sectorielle réalisée par RLS ANALYZ a été déterminante dans notre stratégie d'expansion. Leur expertise et leur réactivité sont exceptionnelles.",
-          "position": "CEO, InnovateLab"
+        "agility": {
+          "title": "Réactivité et Agilité",
+          "description": "Une équipe à taille humaine et des outils digitaux pour livrer des résultats rapides et précis."
         },
-        "third": {
-          "text": "Grâce à RLS ANALYZ, nous avons optimisé notre investissement immobilier. Leur conseil personnalisé et leur suivi rigoureux nous ont permis de maximiser notre rentabilité.",
-          "position": "Directrice Financière, GlobalTrade"
+        "model": {
+          "title": "Méthodologie MODELI",
+          "description": "Un modèle financier interne développé pour des projections robustes et des analyses sur mesure."
+        },
+        "transparency": {
+          "title": "Transparence Totale",
+          "description": "Chaque mission est documentée et partagée en toute clarté avec nos clients et partenaires."
         }
       }
     },
     "cta": {
-      "title": "Prêt à Donner Vie à Votre Projet ?",
-      "subtitle": "Contactez nos experts dès aujourd'hui pour une consultation personnalisée et découvrez comment nous pouvons vous aider.",
+      "title": "Prêt à Collaborer avec Nous ?",
+      "subtitle": "Contactez nos experts dès aujourd’hui pour bénéficier d’un accompagnement personnalisé et d’une expertise reconnue.",
       "contact": "Contactez-nous",
-      "properties": "Voir nos biens"
+      "properties": "Découvrir nos réalisations"
     }
   },
   "blog": {
