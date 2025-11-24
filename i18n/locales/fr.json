@@ -9,7 +9,7 @@
     "language": "Langue"
   },
   "hero": {
-    "title": "RLS ANALYZ – L’expertise financière et l’immobilier au service de la valeur.",
+    "title": "RLS ANALYZ - L'expertise financière et l'immobilier au service de la valeur.",
     "subtitle": "Modélisation, valorisation et stratégie pour les acteurs du marché immobilier africain.",
     "cta": "Découvrir nos offres"
   },
@@ -21,8 +21,8 @@
     "mission": {
       "title": "Notre Mission",
       "subtitle": "Transformer la donnée en valeur stratégique",
-      "heading": "Nous faisons parler la donnée immobilière",
-      "text1": "RLS ANALYZ a pour mission de transformer la donnée immobilière en valeur stratégique. Dans un environnement où la décision repose sur des analyses précises, nous fournissons à nos clients les outils nécessaires pour maximiser la performance de leurs investissements.",
+      "heading": "Transformer la Donnée en Valeur Stratégique",
+      "text1": "RLS ANALYZ a pour mission de transformer la donnée immobilière en valeur stratégique. Dans un environnement où la prise de décision doit s'appuyer sur des analyses précises et documentées, nous fournissons à nos clients les outils et l'expertise nécessaires pour maximiser la performance de leurs investissements immobiliers.",
       "text2": "Nous analysons la rentabilité, sécurisons les opérations et optimisons vos décisions grâce à une approche fondée sur la rigueur analytique et la modélisation financière.",
       "text3": "Chaque mission repose sur une méthodologie éprouvée, adaptée au marché africain et alignée sur les standards internationaux."
     },
@@ -30,24 +30,16 @@
       "title": "Nos Domaines d’Expertise",
       "items": {
         "valuation": {
-          "title": "Évaluation & Valorisation",
+          "title": "Conseil en immobilier d'entreprise",
           "description": "Détermination de la juste valeur des actifs selon les standards RICS et IVS."
         },
         "feasibility": {
-          "title": "Études de Faisabilité",
+          "title": "Valorisation d'actif immobilier",
           "description": "Analyse complète technique, financière et réglementaire pour valider la viabilité des projets."
         },
         "portfolio": {
-          "title": "Portfolio Review & Reporting",
+          "title": "Ingénierie financière immobilière",
           "description": "Suivi des indicateurs de performance avec reporting dynamique et tableaux de bord."
-        },
-        "development": {
-          "title": "Modélisation & Suivi de Projet",
-          "description": "Pilotage financier rigoureux des flux, coûts et partenariats de vos projets immobiliers."
-        },
-        "norms": {
-          "title": "Conversion Normes Locales / Internationales",
-          "description": "Mise en conformité comptable et adaptation des valorisations selon les standards internationaux."
         }
       }
     },

@@ -36,7 +36,7 @@
         </div>
 
         <div v-motion :initial="{ opacity: 0, y: 20 }"
-          :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 200 } }" class="max-w-5xl mx-auto">
+          :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 200 } }" class="max-w-5xl mx-auto justify-text">
           <p class="text-lg text-gray-700 leading-relaxed mb-6">
             RLS ANALYZ est un cabinet spécialisé en <strong class="text-primary">immobilier d'entreprise</strong>, fondé
             pour accompagner les acteurs du marché immobilier d'entreprise en Afrique de l'Ouest. Basé en Côte d'Ivoire,
@@ -342,5 +342,8 @@ useHead({
 </script>
 
 <style scoped>
+.justify-text {
+  text-align: justify;
+}
 /* Styles additionnels si nécessaires */
 </style>

@@ -12,11 +12,10 @@
     <!-- Titre principal -->
     <SectionTitle
       :title="$t('home.mission.title')"
-      :subtitle="$t('home.mission.subtitle')"
     />
 
     <!-- Bloc Mission -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-12">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-12 justify-text">
       <!-- Texte -->
       <div v-motion :initial="{ opacity: 0, x: -40 }"
         :enter="{ opacity: 1, x: 0, transition: { duration: 600 } }">
@@ -38,7 +37,7 @@
       <div v-motion :initial="{ opacity: 0, x: 40 }"
         :enter="{ opacity: 1, x: 0, transition: { duration: 600, delay: 150 } }">
         <img
-          src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=600&fit=crop&q=80"
+          src="https://zupimages.net/up/25/48/t2xl.png"
           alt="Mission RLS ANALYZ"
           class="rounded-3xl shadow-lg"
         />
@@ -150,8 +149,6 @@
             :excerpt="post.excerpt.rendered"
             :image="post._embedded?.['wp:featuredmedia']?.[0]?.source_url || '/placeholder.jpg'" :date="post.date"
             :category="post._embedded?.['wp:term']?.[0]?.[0]?.name" :read-time="post.acf?.read_time"
-            :author="post._embedded?.author?.[0]?.name"
-            :author-avatar="post._embedded?.author?.[0]?.avatar_urls?.['96']"
             @click="navigateTo(localePath({ name: 'blog-slug', params: { slug: post.slug } }))" />
         </div>
 
@@ -288,20 +285,6 @@ const expertiseList = [
     icon: h('svg', { xmlns: 'http://www.w3.org/2000/svg', fill: 'none', viewBox: '0 0 24 24', stroke: 'currentColor' }, [
       h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M4 6h16v12H4z' })
     ])
-  },
-  {
-    title: 'home.expertise.items.development.title',
-    description: 'home.expertise.items.development.description',
-    icon: h('svg', { xmlns: 'http://www.w3.org/2000/svg', fill: 'none', viewBox: '0 0 24 24', stroke: 'currentColor' }, [
-      h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M12 20h9' })
-    ])
-  },
-  {
-    title: 'home.expertise.items.norms.title',
-    description: 'home.expertise.items.norms.description',
-    icon: h('svg', { xmlns: 'http://www.w3.org/2000/svg', fill: 'none', viewBox: '0 0 24 24', stroke: 'currentColor' }, [
-      h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M6 18L18 6M6 6h12v12H6z' })
-    ])
   }
 ]
 
@@ -431,4 +414,7 @@ const formatPrice = (price?: number) => {
 
 <style scoped>
 /* Styles personnalisés pour la page d'accueil */
+.justify-text {
+  text-align: justify;
+}
 </style>

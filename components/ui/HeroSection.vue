@@ -45,37 +45,7 @@
         :enter="{ opacity: 1, scale: 1, transition: { duration: 0.6, ease: 'easeOut', delay: 0.6 } }"
         class="flex flex-col sm:flex-row gap-4 justify-center items-center"
       >
-        <ButtonCTA
-          v-if="ctaText"
-          class="text-base sm:text-lg px-8 py-4 bg-accent hover:bg-accent/90 text-primary"
-          @click="$emit('cta-click')"
-        >
-          {{ ctaText }}
-          <svg
-            v-if="showArrow"
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 ml-2 inline-block group-hover:translate-x-1 transition-transform"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M17 8l4 4m0 0l-4 4m4-4H3"
-            />
-          </svg>
-        </ButtonCTA>
-
-        <!-- CTA secondaire optionnel -->
-        <button
-          v-if="secondaryCtaText"
-          class="px-8 py-4 rounded-2xl font-semibold text-white border-2 border-white/30 hover:bg-white/10 backdrop-blur-sm transition-all duration-500 ease-in-out"
-          @click="$emit('secondary-cta-click')"
-        >
-          {{ secondaryCtaText }}
-        </button>
+        
       </div>
     </div>
 
