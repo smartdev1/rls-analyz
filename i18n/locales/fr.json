@@ -148,7 +148,41 @@
     },
     "methodology": {
       "title": "Notre Méthodologie: Riguer et transparence",
-      "subtitle": "La qualité de nos livrables repose sur une méthodologie structurée, éprouvée et totalement transparente. Chaque mission suit un processus rigoureux garantissant l'exhaustivité de l'analyse et la fiabilité des conclusions."
+      "subtitle": "La qualité de nos livrables repose sur une méthodologie structurée, éprouvée et totalement transparente. Chaque mission suit un processus rigoureux garantissant l'exhaustivité de l'analyse et la fiabilité des conclusions.",
+      "timeline": {
+        "step1": {
+          "title": "Diagnostic Initial",
+          "description": "Analyse approfondie du contexte, des objectifs et des contraintes du projet. Collecte et validation des données financières, techniques et réglementaires."
+        },
+        "step2": {
+          "title": "Paramétrage du Modèle",
+          "description": "Configuration des hypothèses financières, techniques et de marché. Choix des méthodes de valorisation adaptées à la nature de l'actif et aux objectifs de l'analyse."
+        },
+        "step3": {
+          "title": "Modélisation Financière",
+          "description": "Construction de modèles financiers dynamiques intégrant l'ensemble des flux prévisionnels. Calcul des indicateurs de performance et de rentabilité."
+        },
+        "step4": {
+          "title": "Analyses de Sensibilité",
+          "description": "Tests de robustesse du projet face aux variations des paramètres clés. Identification des risques et simulation de scénarios alternatifs (optimiste, pessimiste, central)."
+        },
+        "step5": {
+          "title": "Rapport et Recommandations",
+          "description": "Synthèse des résultats sous forme de rapports structurés et tableaux de bord. Formulation de recommandations stratégiques et opérationnelles actionnables."
+        }
+      }
+    },
+    "norme": {
+      "title": "Standards Internationaux",
+      "subtitle": "Nous appliquons les meilleures pratiques internationales reconnues",
+      "rics": "Royal Institution of Chartered Surveyors - Référence mondiale pour l'évaluation immobilière",
+      "ohada": "Organisation pour l'Harmonisation en Afrique du Droit des Affaires - Cadre réglementaire local",
+      "ivs": "International Valuation Standards - Standards internationaux de valorisation reconnus"
+    },
+    "last": {
+      "title": "Prêt à Optimiser vos Investissements Immobiliers ?",
+      "subtitle": "Découvrez comment notre expertise technologique et notre méthodologie éprouvée peuvent transformer vos projets immobiliers.",
+      "quote": "Demander une démo"
     }
   },
   "about": {

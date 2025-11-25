@@ -249,9 +249,16 @@
         </div>
 
         <div class="max-w-5xl mx-auto">
-          <TimelineItem v-for="(step, index) in methodology" :key="index" :year="(index + 1).toString()"
-            :title="step.title" :description="step.description" :isLast="index === methodology.length - 1"
-            :delay="index * 150" />
+          
+          <TimelineItem 
+            v-for="(step, index) in methodology" 
+            :key="index" 
+            :year="(index + 1).toString()"
+            :title="step.title" 
+            :description="step.description" 
+            :isLast="index === methodology.length - 1"
+            :delay="index * 150" 
+          />
         </div>
       </div>
     </section>
@@ -262,16 +269,21 @@
         <div v-motion :initial="{ opacity: 0, y: 30 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
           class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
-            Standards Internationaux
+            {{ t('expertise.norme.title') }}
           </h2>
           <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Nous appliquons les meilleures pratiques internationales reconnues
+            {{ t('expertise.norme.subtitle') }}
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <PartnerLogo v-for="(standard, index) in standards" :key="index" :name="standard.name"
-            :description="standard.description" :delay="index * 100" />
+          <PartnerLogo 
+            v-for="(standard, index) in standards" 
+            :key="index" 
+            :name="standard.name"
+            :description="standard.description" 
+            :delay="index * 100" 
+          />
         </div>
       </div>
     </section>
@@ -282,15 +294,14 @@
         <div v-motion :initial="{ opacity: 0, scale: 0.9 }"
           :enter="{ opacity: 1, scale: 1, transition: { duration: 800 } }">
           <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
-            Prêt à Optimiser vos Investissements Immobiliers ?
+            {{ t('expertise.last.title') }}
           </h2>
           <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            Découvrez comment notre expertise technologique et notre méthodologie éprouvée peuvent transformer vos
-            projets immobiliers.
+            {{ t('expertise.last.subtitle') }}
           </p>
           <NuxtLink to="/contact"
             class="inline-block px-8 py-4 bg-white text-primary font-bold rounded-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
-            Demander une démo
+            {{ t('expertise.last.quote') }}
           </NuxtLink>
         </div>
       </div>
@@ -299,7 +310,8 @@
 </template>
 
 <script setup lang="ts">
-
+import TimelineItem from '~/components/ui/TimelineItem.vue'
+import PartnerLogo from '~/components/ui/PartnerLogo.vue'
 const { t } = useI18n()
 const localePath = useLocalePath()
 
@@ -333,39 +345,39 @@ const clients = [
 
 const methodology = [
   {
-    title: 'Diagnostic Initial',
-    description: 'Analyse approfondie du contexte, des objectifs et des contraintes du projet. Collecte et validation des données financières, techniques et réglementaires.',
+    title: t('expertise.methodology.timeline.step1.title'),
+    description: t('expertise.methodology.timeline.step1.description'),
   },
   {
-    title: 'Paramétrage du Modèle',
-    description: 'Configuration des hypothèses financières, techniques et de marché. Choix des méthodes de valorisation adaptées à la nature de l\'actif et aux objectifs de l\'analyse.',
+    title: t('expertise.methodology.timeline.step2.title'),
+    description: t('expertise.methodology.timeline.step2.description'),
   },
   {
-    title: 'Modélisation Financière',
-    description: 'Construction de modèles financiers dynamiques intégrant l\'ensemble des flux prévisionnels. Calcul des indicateurs de performance et de rentabilité.',
+    title: t('expertise.methodology.timeline.step3.title'),
+    description: t('expertise.methodology.timeline.step3.description'),
   },
   {
-    title: 'Analyses de Sensibilité',
-    description: 'Tests de robustesse du projet face aux variations des paramètres clés. Identification des risques et simulation de scénarios alternatifs (optimiste, pessimiste, central).',
+    title: t('expertise.methodology.timeline.step4.title'),
+    description: t('expertise.methodology.timeline.step4.description'),
   },
   {
-    title: 'Rapport et Recommandations',
-    description: 'Synthèse des résultats sous forme de rapports structurés et tableaux de bord. Formulation de recommandations stratégiques et opérationnelles actionnables.',
+    title: t('expertise.methodology.timeline.step5.title'),
+    description: t('expertise.methodology.timeline.step5.description'),
   },
 ]
 
 const standards = [
   {
     name: 'RICS',
-    description: 'Royal Institution of Chartered Surveyors - Référence mondiale pour l\'évaluation immobilière',
+    description: t('expertise.norme.rics'),
   },
   {
     name: 'IVS',
-    description: 'International Valuation Standards - Standards internationaux de valorisation reconnus',
+    description: t('expertise.norme.ivs'),
   },
   {
     name: 'OHADA',
-    description: 'Organisation pour l\'Harmonisation en Afrique du Droit des Affaires - Cadre réglementaire local',
+    description: t('expertise.norme.ohada'),
   },
 ]
 </script>

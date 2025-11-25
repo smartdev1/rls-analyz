@@ -164,7 +164,41 @@
         },
         "methodology": {
             "title": "Our Methodology: Rigor and Transparency",
-            "subtitle": "The quality of our deliverables is based on a structured, proven, and fully transparent methodology. Each assignment follows a rigorous process ensuring the completeness of the analysis and the reliability of the conclusions."
+            "subtitle": "The quality of our deliverables is based on a structured, proven, and fully transparent methodology. Each assignment follows a rigorous process ensuring the completeness of the analysis and the reliability of the conclusions.",
+            "timeline": {
+                "step1": {
+                    "title": "Initial Assessment",
+                    "description": "In-depth analysis of the project's context, objectives, and constraints. Collection and validation of financial, technical, and regulatory data."
+                },
+                "step2": {
+                    "title": "Model Setup",
+                    "description": "Configuration of financial, technical, and market assumptions. Selection of valuation methods suited to the nature of the asset and the objectives of the analysis."
+                },
+                "step3": {
+                    "title": "Financial Modelling",
+                    "description": "Development of dynamic financial models integrating all projected cash flows. Calculation of performance and profitability indicators."
+                },
+                "step4": {
+                    "title": "Sensitivity Analyses",
+                    "description": "Robustness tests of the project against variations in key parameters. Identification of risks and simulation of alternative scenarios (optimistic, pessimistic, baseline)."
+                },
+                "step5": {
+                    "title": "Report and Recommendations",
+                    "description": "Summary of results in structured reports and dashboards. Formulation of actionable strategic and operational recommendations."
+                }
+            }
+        },
+        "norme": {
+            "title": "International Standards",
+            "subtitle": "We apply the most recognized international best practices",
+            "rics": "Royal Institution of Chartered Surveyors - Global benchmark for real estate valuation",
+            "ohada": "Organization for the Harmonization of Business Law in Africa - Local regulatory framework",
+            "ivs": "International Valuation Standards - Widely recognized international valuation standards"
+        },
+        "last": {
+            "title": "Ready to Optimize Your Real Estate Investments?",
+            "subtitle": "Discover how our technological expertise and proven methodology can transform your real estate projects.",
+            "quote": "Request a Demo"
         }
     },
     "about": {

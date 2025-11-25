@@ -1,3 +1,5 @@
+// TimelineItem.vue
+
 <template>
   <div class="relative flex gap-6 group">
     <!-- Timeline vertical line -->
