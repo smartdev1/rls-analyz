@@ -27,7 +27,7 @@
       "text3": "Chaque mission repose sur une méthodologie éprouvée, adaptée au marché africain et alignée sur les standards internationaux."
     },
     "expertise": {
-      "title": "Nos Domaines d’Expertise",
+      "title": "Nos Domaines d'Expertise",
       "items": {
         "valuation": {
           "title": "Conseil en immobilier d'entreprise",
@@ -85,6 +85,70 @@
       "title": "Prêt à Investir dans Votre Avenir ?",
       "subtitle": "Contactez nos experts dès maintenant pour une consultation personnalisée et découvrez comment nous pouvons vous accompagner.",
       "button": "Contactez-nous"
+    }
+  },
+  "expertise": {
+    "hero": {
+      "title": "Notre Expertise Technologique",
+      "subtitle": "Des outils de pointe et une méthodologie éprouvée pour l'analyse immobilière institutionnelle"
+    },
+    "modeli": {
+      "badge": "INNOVATION PROPRIÉTAIRE",
+      "title": "MODELI : Notre Add-in Excel Propriétaire",
+      "description": "MODELI est un module Excel développé en interne, spécifiquement conçu pour la modélisation d'actifs immobiliers. Cet outil permet de structurer rapidement des modèles financiers complexes, d'automatiser les calculs de valorisation et de générer des rapports professionnels en quelques clics.",
+      "features": {
+        "f1": "Automatisation des calculs financiers complexes",
+        "f2": "Templates standardisés pour garantir la cohérence",
+        "f3": "Génération de rapports professionnels automatisée",
+        "f4": "Gain de temps significatif dans la modélisation"
+      },
+      "illustration": "Interface MODELI - Module Excel"
+    },
+    "ecosystem": {
+      "title": "Notre Écosystème Logiciel",
+      "subtitle": "Une suite d'outils professionnels intégrés permettant d'automatiser, sécuriser et accélérer les processus de modélisation financière",
+      "cards": {
+        "argus": {
+          "title": "ARGUS Enterprise",
+          "text": "Logiciel de référence pour l'évaluation immobilière institutionnelle. Utilisé par les plus grands investisseurs mondiaux."
+        },
+        "powerbi": {
+          "title": "Power BI",
+          "text": "Visualisation de données interactive et tableaux de bord dynamiques pour un suivi en temps réel de la performance."
+        },
+        "excel": {
+          "title": "Excel Avancé",
+          "text": "Modélisation financière sur mesure et analyses complexes adaptées aux spécificités de chaque projet."
+        },
+        "project": {
+          "title": "Gestion de Projet",
+          "text": "Outils de suivi temps réel et collaboration client pour un pilotage optimal des missions."
+        }
+      }
+    },
+    "domains": {
+      "title": "Nos Domaines d'Intervention",
+      "subtitle": "Une expertise complète couvrant l'ensemble de la chaîne de valeur immobilière",
+      "assets": {
+        "title": "Types d'Actifs Analysés",
+        "a1": "Immobilier de bureaux et commerces",
+        "a2": "Actifs logistiques et industriels",
+        "a3": "Résidentiel haut standing et promotions immobilières",
+        "a4": "Infrastructures hôtelières et touristiques",
+        "a5": "Projets mixtes et développements intégrés"
+      },
+      "clients": {
+        "title": "Secteurs et Clients",
+        "c1": "Banques et institutions financières",
+        "c2": "Fonds d'investissement et asset managers",
+        "c3": "Promoteurs immobiliers et foncières",
+        "c4": "Institutions publiques et agences gouvernementales",
+        "c5": "Partenariats public-privé (PPP)"
+      }
+    },
+    "methodology": {
+      "title": "Notre Méthodologie: Riguer et transparence",
+      "subtitle": "La qualité de nos livrables repose sur une méthodologie structurée, éprouvée et totalement transparente. Chaque mission suit un processus rigoureux garantissant l'exhaustivité de l'analyse et la fiabilité des conclusions."
     }
   },
   "about": {

@@ -103,6 +103,70 @@
             "button": "Contact Us"
         }
     },
+    "expertise": {
+        "hero": {
+            "title": "Our Technological Expertise",
+            "subtitle": "Cutting-edge tools and a proven methodology for institutional real estate analysis"
+        },
+        "modeli": {
+            "badge": "PROPRIETARY INNOVATION",
+            "title": "MODELI: Our Proprietary Excel Add-in",
+            "description": "MODELI is an internally developed Excel module specifically designed for real estate asset modeling. This tool allows you to quickly structure complex financial models, automate valuation calculations, and generate professional reports in just a few clicks.",
+            "features": {
+                "f1": "Automation of complex financial calculations",
+                "f2": "Standardized templates to ensure consistency",
+                "f3": "Automated generation of professional reports",
+                "f4": "Significant time savings in modeling"
+            },
+            "illustration": "MODELI Interface – Excel Module"
+        },
+        "ecosystem": {
+            "title": "Our Software Ecosystem",
+            "subtitle": "A suite of integrated professional tools to automate, secure, and accelerate financial modeling processes",
+            "cards": {
+                "argus": {
+                    "title": "ARGUS Enterprise",
+                    "text": "The benchmark software for institutional real estate valuation. Used by major global investors."
+                },
+                "powerbi": {
+                    "title": "Power BI",
+                    "text": "Interactive data visualization and dynamic dashboards for real-time performance tracking."
+                },
+                "excel": {
+                    "title": "Advanced Excel",
+                    "text": "Tailor-made financial modeling and complex analyses adapted to each project's specifics."
+                },
+                "project": {
+                    "title": "Project Management",
+                    "text": "Real-time tracking tools and client collaboration for optimal project management."
+                }
+            }
+        },
+        "domains": {
+            "title": "Our Areas of Expertise",
+            "subtitle": "Comprehensive expertise covering the entire real estate value chain",
+            "assets": {
+                "title": "Analyzed Asset Types",
+                "a1": "Office and retail real estate",
+                "a2": "Logistics and industrial assets",
+                "a3": "High-end residential and real estate developments",
+                "a4": "Hotel and tourism infrastructure",
+                "a5": "Mixed-use projects and integrated developments"
+            },
+            "clients": {
+                "title": "Sectors and Clients",
+                "c1": "Banks and financial institutions",
+                "c2": "Institutional investors and family offices",
+                "c3": "Real estate developers and promoters",
+                "c4": "Real estate companies and asset management firms",
+                "c5": "Public bodies and PPP partnerships"
+            }
+        },
+        "methodology": {
+            "title": "Our Methodology: Rigor and Transparency",
+            "subtitle": "The quality of our deliverables is based on a structured, proven, and fully transparent methodology. Each assignment follows a rigorous process ensuring the completeness of the analysis and the reliability of the conclusions."
+        }
+    },
     "about": {
         "meta": {
             "title": "About Us - RLS ANALYZ | Corporate Real Estate in West Africa",

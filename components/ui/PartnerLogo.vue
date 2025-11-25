@@ -1,5 +1,3 @@
-// PartenerLogo.vue
-
 <template>
   <div
     v-motion
