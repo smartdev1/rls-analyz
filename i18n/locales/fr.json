@@ -9,8 +9,8 @@
     "language": "Langue"
   },
   "hero": {
-    "title": "RLS ANALYZ - L'expertise financière et l'immobilier au service de la valeur.",
-    "subtitle": "Modélisation, valorisation et stratégie pour les acteurs du marché immobilier africain.",
+    "title": "RLS ANALYZ - Conseil en Immobilier et Valorisation d'Actifs",
+    "subtitle": " ",
     "cta": "Découvrir nos offres"
   },
   "home": {
@@ -20,44 +20,53 @@
     },
     "mission": {
       "title": "Notre Mission",
-      "subtitle": "Transformer la donnée en valeur stratégique",
-      "heading": "Transformer la Donnée en Valeur Stratégique",
-      "text1": "RLS ANALYZ a pour mission de transformer la donnée immobilière en valeur stratégique. Dans un environnement où la prise de décision doit s'appuyer sur des analyses précises et documentées, nous fournissons à nos clients les outils et l'expertise nécessaires pour maximiser la performance de leurs investissements immobiliers.",
-      "text2": "Nous analysons la rentabilité, sécurisons les opérations et optimisons vos décisions grâce à une approche fondée sur la rigueur analytique et la modélisation financière.",
-      "text3": "Chaque mission repose sur une méthodologie éprouvée, adaptée au marché africain et alignée sur les standards internationaux."
+      "subtitle": "Conseil stratégique en immobilier d'entreprise",
+      "heading": "Conseil stratégique en immobilier d'entreprise",
+      "text1": "RLS ANALYZ est une société ivoirienne indépendante spécialisée en immobilier d'entreprise, en études de faisabilité et en conseil en investissement immobilier.",
+      "text2": "Implanté à Abidjan, le cabinet accompagne promoteurs, investisseurs, banques et institutions publiques dans la valorisation et l'analyse financière des projets immobiliers.",
+      "text3": " "
     },
     "expertise": {
       "title": "Nos Domaines d'Expertise",
       "items": {
         "valuation": {
-          "title": "Conseil en immobilier d'entreprise",
-          "description": "Détermination de la juste valeur des actifs selon les standards RICS et IVS."
+          "title": "Structuration, modélisation financière et gestion des risques",
+          "description": " "
         },
         "feasibility": {
-          "title": "Valorisation d'actif immobilier",
-          "description": "Analyse complète technique, financière et réglementaire pour valider la viabilité des projets."
+          "title": "Valorisation d'Actifs et Analyse de marché",
+          "description": " "
         },
         "portfolio": {
-          "title": "Ingénierie financière immobilière",
+          "title": "Ingénierie financière immobilière",
           "description": "Suivi des indicateurs de performance avec reporting dynamique et tableaux de bord."
         }
       }
     },
     "services": {
       "title": "Nos Services",
-      "subtitle": "Un accompagnement complet pour tous vos projets immobiliers d'entreprise.",
+      "subtitle": " ",
       "cta": "Découvrir nos services",
       "market": {
-        "title": "Étude de marché",
-        "description": "Analyse approfondie du marché immobilier pour optimiser vos investissements."
+        "title": "Étude de Faisabilité",
+        "description": "Modélisation des flux de trésorerie selon la méthode DCF, simulation de rentabilité avec analyse de sensibilité (VAN, TRI, DSCR) et conformité aux standards RICS/AVS."
       },
       "analysis": {
-        "title": "Analyse sectorielle",
-        "description": "Évaluation détaillée des secteurs d'activité pour cibler les meilleures opportunités."
+        "title": "Structuration de projets",
+        "description": "Etude économique, analyse de constructibilité, structuration VEFA, bail emphytéotyque, PPP et évaluation des coûts CAPEX/OPEX."
       },
       "investment": {
-        "title": "Conseil en investissement",
-        "description": "Accompagnement personnalisé pour sécuriser et rentabiliser vos projets immobiliers."
+        "title": "Conseil en financement",
+        "description": "Plan de financement, analyse de rentbilité, ratio financiers (LTV, DSCR, IRR) et redaction de mémorandums investisseurs."
+      }
+      ,
+      "valorisation": {
+        "title": "Valorisation d'actifs",
+        "description": "Evaluation de bureaux commerces, hotels, entrepôts et bien plus selon la méthode de capitalisation, comparaison et DCF. Rapports conformes aux exigences institutionnelles."
+      },
+      "intelligence": {
+        "title": "Intelligence immobilière",
+        "description": "Etude de marché, analyse des loyers et rendements, rapports stratégiques et indicateurs de suivi de performance."
       }
     },
     "why": {
@@ -82,8 +91,8 @@
       "viewAll": "Voir tous les articles"
     },
     "cta": {
-      "title": "Prêt à Investir dans Votre Avenir ?",
-      "subtitle": "Contactez nos experts dès maintenant pour une consultation personnalisée et découvrez comment nous pouvons vous accompagner.",
+      "title": "Décidez avec précision. Investissez avec confiance.",
+      "subtitle": "Analyse financière, modélisation avancée et structuration selon les standards internationaux.",
       "button": "Contactez-nous"
     }
   },

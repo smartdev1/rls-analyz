@@ -126,14 +126,6 @@
             </li>
             <li>
               <NuxtLink
-                to="/expertise"
-                class="text-white/70 hover:text-accent transition-colors inline-flex items-center group"
-              >
-                <span class="group-hover:translate-x-1 transition-transform">Expertise</span>
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink
                 to="/blog"
                 class="text-white/70 hover:text-accent transition-colors inline-flex items-center group"
               >

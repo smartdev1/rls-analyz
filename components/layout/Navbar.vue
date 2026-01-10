@@ -242,7 +242,6 @@ const navLinks = [
   { label: "nav.home", path: "/" },
   { label: "nav.about", path: "/a-propos" },
   { label: "nav.services", path: "/services" },
-  { label: "nav.expertise", path: "/expertise" },
   { label: "nav.blog", path: "/blog" },
   { label: "nav.contact", path: "/contact" }
 ]

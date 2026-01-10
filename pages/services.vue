@@ -448,95 +448,6 @@
             </div>
           </div>
 
-          <!-- Service 5: Conversion IFRS -->
-          <div
-            v-motion
-            :initial="{ opacity: 0, x: -50 }"
-            :enter="{ opacity: 1, x: 0, transition: { duration: 700, delay: 800 } }"
-            class="bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-500"
-          >
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
-              <div class="relative h-72 lg:h-full min-h-[400px]">
-                <img
-                  src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=800&fit=crop&q=80"
-                  alt="Conversion IFRS"
-                  class="absolute inset-0 w-full h-full object-cover"
-                />
-                <div class="absolute inset-0 bg-gradient-to-br from-[#002B5B]/70 via-[#002B5B]/50 to-transparent"></div>
-                <div class="absolute bottom-8 left-8 right-8">
-                  <div class="inline-flex items-center gap-3 px-4 py-2 bg-[#C6A15B] rounded-full">
-                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/>
-                    </svg>
-                    <span class="text-white font-semibold text-sm" style="font-family: 'Montserrat', sans-serif">Service #5</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="p-8 lg:p-12 flex flex-col justify-center">
-                <div class="mb-6">
-                  <div class="inline-flex items-center justify-center w-16 h-16 bg-[#C6A15B]/10 rounded-2xl mb-4">
-                    <svg class="w-8 h-8 text-[#C6A15B]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                    </svg>
-                  </div>
-                  <h3 class="text-3xl lg:text-4xl font-bold text-[#002B5B] mb-4" style="font-family: 'Montserrat', sans-serif">
-                    Conversion aux Normes IFRS
-                  </h3>
-                </div>
-
-                <p class="text-gray-700 text-lg leading-relaxed mb-6" style="font-family: 'Lato', sans-serif">
-                  Mise en conformité de vos actifs immobiliers avec les normes IFRS 16 et IAS 40. Expertise en retraitement comptable et valorisation pour répondre aux exigences internationales et aux audits externes.
-                </p>
-
-                <div class="space-y-4 mb-8">
-                  <div class="flex items-start gap-3">
-                    <div class="flex-shrink-0 w-6 h-6 bg-[#C6A15B] rounded-full flex items-center justify-center mt-1">
-                      <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
-                      </svg>
-                    </div>
-                    <p class="text-gray-700 text-base" style="font-family: 'Lato', sans-serif">Application des normes IFRS 16 et IAS 40</p>
-                  </div>
-                  <div class="flex items-start gap-3">
-                    <div class="flex-shrink-0 w-6 h-6 bg-[#C6A15B] rounded-full flex items-center justify-center mt-1">
-                      <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
-                      </svg>
-                    </div>
-                    <p class="text-gray-700 text-base" style="font-family: 'Lato', sans-serif">Retraitement comptable des baux et actifs immobiliers</p>
-                  </div>
-                  <div class="flex items-start gap-3">
-                    <div class="flex-shrink-0 w-6 h-6 bg-[#C6A15B] rounded-full flex items-center justify-center mt-1">
-                      <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
-                      </svg>
-                    </div>
-                    <p class="text-gray-700 text-base" style="font-family: 'Lato', sans-serif">Accompagnement et formation des équipes financières</p>
-                  </div>
-                  <div class="flex items-start gap-3">
-                    <div class="flex-shrink-0 w-6 h-6 bg-[#C6A15B] rounded-full flex items-center justify-center mt-1">
-                      <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
-                      </svg>
-                    </div>
-                    <p class="text-gray-700 text-base" style="font-family: 'Lato', sans-serif">Documentation conforme aux audits externes</p>
-                  </div>
-                </div>
-
-                <button
-                  @click="navigateTo(localePath({ name: 'contact', query: { service: 'ifrs' } }))"
-                  class="inline-flex items-center gap-2 px-8 py-4 bg-[#002B5B] text-white rounded-full font-bold hover:bg-[#001d3f] transition-all duration-300 shadow-lg hover:shadow-xl group"
-                  style="font-family: 'Montserrat', sans-serif"
-                >
-                  Mettre en conformité
-                  <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -561,11 +472,11 @@
             class="text-lg text-gray-600 max-w-2xl mx-auto"
             style="font-family: 'Lato', sans-serif"
           >
-            Un processus éprouvé en 4 étapes pour garantir la réussite de vos projets
+            Un processus éprouvé en 5 étapes pour garantir la réussite de vos projets
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           <div
             v-for="(step, index) in processSteps"
             :key="index"
@@ -596,10 +507,10 @@
                 {{ step.title }}
               </h4>
 
-              <!-- Description -->
+              <!-- Description 
               <p class="text-gray-600 leading-relaxed" style="font-family: 'Lato', sans-serif">
                 {{ step.description }}
-              </p>
+              </p>-->
             </div>
 
             <!-- Arrow connector (desktop only) -->
@@ -611,67 +522,6 @@
                 <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/>
               </svg>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pourquoi RLS-ANALYZ Section -->
-    <section class="py-20 bg-[#F2F2F2]">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div class="text-center mb-16">
-          <h2
-            v-motion
-            :initial="{ opacity: 0, y: 30 }"
-            :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-            class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#002B5B] mb-4"
-            style="font-family: 'Montserrat', sans-serif"
-          >
-            Pourquoi Choisir RLS-ANALYZ ?
-          </h2>
-          <p
-            v-motion
-            :initial="{ opacity: 0, y: 20 }"
-            :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 200 } }"
-            class="text-lg text-gray-600 max-w-2xl mx-auto"
-            style="font-family: 'Lato', sans-serif"
-          >
-            Une expertise reconnue au service de vos ambitions immobilières
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div
-            v-for="(reason, index) in whyRLS"
-            :key="index"
-            v-motion
-            :initial="{ opacity: 0, scale: 0.9 }"
-            :enter="{ 
-              opacity: 1, 
-              scale: 1, 
-              transition: { 
-                duration: 600, 
-                delay: index * 150 
-              } 
-            }"
-            class="bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group"
-          >
-            <!-- Icon -->
-            <div class="flex justify-center mb-6">
-              <div class="w-20 h-20 rounded-full bg-[#C6A15B]/10 flex items-center justify-center group-hover:bg-[#C6A15B]/20 transition-colors duration-300">
-                <component :is="reason.icon" class="w-10 h-10 text-[#C6A15B]" />
-              </div>
-            </div>
-
-            <!-- Title -->
-            <h3 class="text-xl font-bold text-[#002B5B] mb-4" style="font-family: 'Montserrat', sans-serif">
-              {{ reason.title }}
-            </h3>
-
-            <!-- Description -->
-            <p class="text-gray-600 leading-relaxed text-sm" style="font-family: 'Lato', sans-serif">
-              {{ reason.description }}
-            </p>
           </div>
         </div>
       </div>
@@ -746,7 +596,7 @@
             <svg class="w-5 h-5 text-[#C6A15B]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
             </svg>
-            <span style="font-family: 'Lato', sans-serif">contact@rls-analyz.com</span>
+            <span style="font-family: 'Lato', sans-serif">  hermann.kouadio@rlsanalyz.com </span>
           </div>
           <div class="flex items-center gap-2">
             <svg class="w-5 h-5 text-[#C6A15B]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -805,25 +655,30 @@ const scrollToServices = () => {
 // ✅ Étapes du processus (Méthodologie)
 const processSteps = [
   {
-    title: 'Analyse & Diagnostic',
+    title: 'Transparence & Intégrité',
     description:
-      "Nous commençons par comprendre votre portefeuille immobilier, vos objectifs financiers et vos contraintes pour poser un diagnostic précis.",
+      "",
   },
   {
-    title: 'Évaluation & Modélisation',
+    title: 'Rigueur Méthodologique',
     description:
       "Nous modélisons la performance économique et financière à l’aide de nos outils MODELI et des standards internationaux.",
   },
   {
-    title: 'Recommandations & Stratégie',
+    title: 'Compétence Dual',
     description:
       "Nous formulons des scénarios et recommandations personnalisés pour maximiser la rentabilité et minimiser les risques.",
   },
   {
-    title: 'Suivi & Reporting',
+    title: 'Innovation digitale',
     description:
       "Nous assurons un accompagnement régulier, des rapports clairs et des tableaux de bord de performance pour vos actifs.",
   },
+  {
+    title: 'Durabilité ESG',
+    description:
+      "Nous assurons un accompagnement régulier, des rapports clairs et des tableaux de bord de performance pour vos actifs.",
+  }
 ]
 
 // ✅ Raisons de choisir RLS-ANALYZ

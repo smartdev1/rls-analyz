@@ -72,28 +72,49 @@
 
     <!-- Section Nos Services -->
     <section class="spacing-section bg-white">
-      <div class="container-modeli">
-        <SectionTitle :title="$t('home.services.title')" :subtitle="$t('home.services.subtitle')" />
+  <div class="container-modeli">
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <CardService v-for="service in services" :key="service.titleKey" :title="$t(service.titleKey)"
-            :description="$t(service.descriptionKey)" :icon="service.icon" />
+    <SectionTitle
+      :title="$t('home.services.title')"
+      :subtitle="$t('home.services.subtitle')"
+    />
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 mt-12">
+      <div
+        v-for="(service, index) in services"
+        :key="service.titleKey"
+        class="flex items-start gap-5"
+        v-motion
+        :initial="{ opacity: 0, y: 30 }"
+        :enter="{
+          opacity: 1,
+          y: 0,
+          transition: { duration: 500, delay: index * 120 }
+        }"
+      >
+        <!-- Icône -->
+        <div class="flex-shrink-0">
+          <component
+            :is="service.icon"
+            class="w-8 h-8 text-accent"
+            aria-hidden="true"
+          />
         </div>
 
-        <!-- CTA Services -->
-        <div class="text-center mt-12">
-          <ButtonCTA class="bg-accent hover:bg-accent/90 text-primary"
-            @click="navigateTo(localePath({ name: 'services' }))">
-            {{ $t('home.services.cta') }}
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 inline-block" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </ButtonCTA>
+        <!-- Texte -->
+        <div>
+          <h3 class="text-lg font-heading font-semibold text-primary mb-2">
+            {{ $t(service.titleKey) }}
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            {{ $t(service.descriptionKey) }}
+          </p>
         </div>
       </div>
-    </section>
-    
+    </div>
+
+  </div>
+</section>
 
 
     <!-- Section Pourquoi MODELI -->
@@ -279,13 +300,6 @@ const expertiseList = [
       h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M9 12l2 2 4-4' })
     ])
   },
-  {
-    title: 'home.expertise.items.portfolio.title',
-    description: 'home.expertise.items.portfolio.description',
-    icon: h('svg', { xmlns: 'http://www.w3.org/2000/svg', fill: 'none', viewBox: '0 0 24 24', stroke: 'currentColor' }, [
-      h('path', { 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-width': '2', d: 'M4 6h16v12H4z' })
-    ])
-  }
 ]
 
 
@@ -330,6 +344,42 @@ const services = [
   {
     titleKey: 'home.services.investment.title',
     descriptionKey: 'home.services.investment.description',
+    icon: h('svg', {
+      xmlns: 'http://www.w3.org/2000/svg',
+      class: 'w-8 h-8',
+      fill: 'none',
+      viewBox: '0 0 24 24',
+      stroke: 'currentColor'
+    }, [
+      h('path', {
+        'stroke-linecap': 'round',
+        'stroke-linejoin': 'round',
+        'stroke-width': '2',
+        d: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'
+      })
+    ])
+  },
+  {
+    titleKey: 'home.services.valorisation.title',
+    descriptionKey: 'home.services.valorisation.description',
+    icon: h('svg', {
+      xmlns: 'http://www.w3.org/2000/svg',
+      class: 'w-8 h-8',
+      fill: 'none',
+      viewBox: '0 0 24 24',
+      stroke: 'currentColor'
+    }, [
+      h('path', {
+        'stroke-linecap': 'round',
+        'stroke-linejoin': 'round',
+        'stroke-width': '2',
+        d: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'
+      })
+    ])
+  },
+  {
+    titleKey: 'home.services.intelligence.title',
+    descriptionKey: 'home.services.intelligence.description',
     icon: h('svg', {
       xmlns: 'http://www.w3.org/2000/svg',
       class: 'w-8 h-8',
